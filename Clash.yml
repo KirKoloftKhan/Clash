@@ -476,6 +476,9 @@ proxy-groups:
       - AE 🇦🇪 Dubai
 
 
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 300
+    
   - name: 🔰 Select
     type: select
     proxies:
