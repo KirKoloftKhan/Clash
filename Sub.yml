@@ -742,5 +742,5 @@ rules:
   - DOMAIN-SUFFIX,ad.com,🚫 Intercept
   - SRC-IP-CIDR,192.168.1.201/32,✅ Direct
   - IP-CIDR,127.0.0.0/8,✅ Direct
-  - GEOIP,IR,✅ Direct
+  - GEOIP,CH,✅ Direct
   - MATCH,,🔰 Select,dns-failed
