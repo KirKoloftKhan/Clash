@@ -1,0 +1,984 @@
+mixed-port: 7890
+allow-lan: false
+mode: Global
+log-level: silent
+external-controller: 127.0.0.1:9090
+dns:
+  enable: true
+  enhanced-mode: redir-host
+  fake-ip-range: 198.18.0.1/16
+  nameserver:
+    - 94.140.14.14
+    - 94.140.15.15
+tun:
+  enable: true
+  stack: gvisor
+  dns-hijack:
+    - 198.18.0.2:53
+  auto-route: true
+  auto-detect-interface: true
+
+  fallback:
+    - 94.140.14.14
+    - 94.140.15.15
+proxies:
+  - {name: BE 🇧🇪 Brussels 1, server: 91.90.123.213, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: BE 🇧🇪 Brussels 2, server: 91.90.123.141, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: BE 🇧🇪 Brussels 3, server: 91.90.123.187, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: BE 🇧🇪 Brussels 4, server: 91.90.123.211, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: BE 🇧🇪 Antwerp 1, server: 188.95.55.121, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: BE 🇧🇪 Antwerp 2, server: 188.95.55.120, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: BE 🇧🇪 Antwerp 3, server: 188.95.55.118, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: BE 🇧🇪 Antwerp 4, server: 188.95.55.119, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: LU 🇱🇺 Luxembourg 1, server: 185.153.151.164, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: LU 🇱🇺 Luxembourg 2, server: 95.85.66.40, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: LU 🇱🇺 Luxembourg 3, server: 95.85.66.38, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: LU 🇱🇺 Luxembourg 4, server: 185.153.151.179, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: NO 🇳🇴 Oslo 1, server: 91.219.215.35, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: NO 🇳🇴 Oslo 2, server: 91.219.215.36, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: NO 🇳🇴 Oslo 3, server: 91.219.215.38, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: NO 🇳🇴 Oslo 4, server: 91.219.215.83, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: PL 🇵🇱 Gdansk 1, server: 5.133.8.117, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: PL 🇵🇱 Gdansk 2, server: 5.187.49.148, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: PL 🇵🇱 Gdansk 3, server: 5.133.14.198, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: PL 🇵🇱 Gdansk 4, server: 5.187.49.147, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: PL 🇵🇱 Warsaw 1, server: 185.246.208.105, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: PL 🇵🇱 Warsaw 2, server: 185.246.208.77, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: PL 🇵🇱 Warsaw 3, server: 5.253.206.69, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: PL 🇵🇱 Warsaw 4, server: 185.246.208.107, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: FR 🇫🇷 Paris 1, server: 143.244.57.106, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: FR 🇫🇷 Paris 2, server: 143.244.57.119, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: FR 🇫🇷 Paris 3, server: 143.244.57.118, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: FR 🇫🇷 Paris 4, server: 84.17.60.250, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: FR 🇫🇷 Marseille 1, server: 185.166.84.79, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: FR 🇫🇷 Marseille 2, server: 185.166.84.73, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: FR 🇫🇷 Marseille 3, server: 138.199.16.142, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: FR 🇫🇷 Marseille 4, server: 185.166.84.81, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: FR 🇫🇷 Bordeaux 1, server: 185.108.106.24, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: FR 🇫🇷 Bordeaux 2, server: 185.108.106.106, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: FR 🇫🇷 Bordeaux 3, server: 185.108.106.104, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: FR 🇫🇷 Bordeaux 4, server: 185.108.106.105, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: DE 🇩🇪 Berlin 1, server: 193.29.106.139, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: DE 🇩🇪 Berlin 2, server: 193.29.106.165, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: DE 🇩🇪 Berlin 3, server: 193.29.106.148, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: DE 🇩🇪 Berlin 4, server: 193.29.106.133, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: DE 🇩🇪 Frankfurt am Main 1, server: 138.199.19.169, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: DE 🇩🇪 Frankfurt am Main 2, server: 138.199.19.155, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: DE 🇩🇪 Frankfurt am Main 3, server: 138.199.19.167, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: DE 🇩🇪 Frankfurt am Main 4, server: 138.199.19.137, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: AZ 🇦🇿 Baku 1, server: 94.20.154.61, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: AZ 🇦🇿 Baku 2, server: 62.212.239.51, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: AZ 🇦🇿 Baku 3, server: 62.212.239.45, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: AZ 🇦🇿 Baku 4, server: 94.20.154.85, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: NL 🇳🇱 Amsterdam 1, server: 178.239.173.47, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: NL 🇳🇱 Amsterdam 2, server: 81.19.209.120, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: NL 🇳🇱 Amsterdam 3, server: 143.244.42.76, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: NL 🇳🇱 Amsterdam 4, server: 81.19.209.59, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: DK 🇩🇰 Copenhagen 1, server: 193.29.107.219, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: DK 🇩🇰 Copenhagen 2, server: 193.29.107.195, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: DK 🇩🇰 Copenhagen 3, server: 193.29.107.181, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: DK 🇩🇰 Copenhagen 4, server: 193.29.107.197, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: IT 🇮🇹 Rome 1, server: 82.102.26.99, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: IT 🇮🇹 Rome 2, server: 82.102.26.62, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: IT 🇮🇹 Rome 3, server: 82.102.26.102, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: IT 🇮🇹 Rome 4, server: 82.102.26.101, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: IT 🇮🇹 Milan 1, server: 84.17.58.136, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: IT 🇮🇹 Milan 2, server: 84.17.58.197, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: IT 🇮🇹 Milan 3, server: 212.102.54.181, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: IT 🇮🇹 Milan 4, server: 212.102.54.150, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: FI 🇫🇮 Helsinki 1, server: 196.196.203.101, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: FI 🇫🇮 Helsinki 2, server: 196.196.203.85, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: FI 🇫🇮 Helsinki 3, server: 196.196.203.107, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: FI 🇫🇮 Helsinki 4, server: 196.196.203.141, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: CH 🇨🇭 Zurich 1, server: 156.146.62.57, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: CH 🇨🇭 Zurich 2, server: 156.146.62.41, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: CH 🇨🇭 Zurich 3, server: 156.146.62.51, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: CH 🇨🇭 Zurich 4, server: 156.146.62.46, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: TR 🇹🇷 Istanbul 1, server: 107.150.94.43, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: TR 🇹🇷 Istanbul 2, server: 107.150.94.45, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: TR 🇹🇷 Istanbul 3, server: 107.150.94.29, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: TR 🇹🇷 Istanbul 4, server: 107.150.94.30, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: AL 🇦🇱 Tirana 1, server: 31.171.155.19, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: AL 🇦🇱 Tirana 2, server: 31.171.155.37, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: AL 🇦🇱 Tirana 3, server: 31.171.155.51, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: AL 🇦🇱 Tirana 4, server: 31.171.155.99, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: DZ 🇩🇿 Algiers 1, server: 62.197.144.3, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: DZ 🇩🇿 Algiers 2, server: 62.197.144.4, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: DZ 🇩🇿 Algiers 3, server: 62.197.144.5, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: DZ 🇩🇿 Algiers 4, server: 62.197.144.6, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: AT 🇦🇹 Vienna 1, server: 146.70.28.93, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: AT 🇦🇹 Vienna 2, server: 146.70.28.94, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: AT 🇦🇹 Vienna 3, server: 89.187.168.56, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: AT 🇦🇹 Vienna 4, server: 146.70.28.91, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: HR 🇭🇷 Zagreb 1, server: 176.222.34.119, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: HR 🇭🇷 Zagreb 2, server: 89.164.99.109, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: HR 🇭🇷 Zagreb 3, server: 89.164.99.136, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: HR 🇭🇷 Zagreb 4, server: 176.222.34.116, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: CY 🇨🇾 Nicosia 1, server: 195.47.194.99, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: CY 🇨🇾 Nicosia 2, server: 195.47.194.98, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: CY 🇨🇾 Nicosia 3, server: 195.47.194.97, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: CY 🇨🇾 Nicosia 4, server: 195.47.194.96, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: EE 🇪🇪 Tallinn 1, server: 185.174.159.138, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: EE 🇪🇪 Tallinn 2, server: 185.174.159.137, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: EE 🇪🇪 Tallinn 3, server: 185.174.159.136, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: EE 🇪🇪 Tallinn 4, server: 185.174.159.139, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: IE 🇮🇪 Dublin 1, server: 5.157.13.91, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: IE 🇮🇪 Dublin 2, server: 5.157.13.92, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: IE 🇮🇪 Dublin 3, server: 5.157.13.93, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: IE 🇮🇪 Dublin 4, server: 5.157.13.94, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: LV 🇱🇻 Riga 1, server: 188.92.78.150, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: LV 🇱🇻 Riga 2, server: 188.92.78.151, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: LV 🇱🇻 Riga 3, server: 188.92.78.135, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: LV 🇱🇻 Riga 4, server: 91.203.69.146, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: PT 🇵🇹 Lisbon 1, server: 91.205.230.154, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: PT 🇵🇹 Lisbon 2, server: 91.205.230.134, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: PT 🇵🇹 Lisbon 3, server: 91.205.230.132, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: PT 🇵🇹 Lisbon 4, server: 91.205.230.131, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: PT 🇵🇹 Porto 1, server: 194.39.127.153, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: PT 🇵🇹 Porto 2, server: 194.39.127.154, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: PT 🇵🇹 Porto 3, server: 194.39.127.163, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: PT 🇵🇹 Porto 4, server: 194.39.127.181, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: RO 🇷🇴 Bucharest 1, server: 185.102.217.194, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: RO 🇷🇴 Bucharest 2, server: 185.102.217.195, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: RO 🇷🇴 Bucharest 3, server: 185.102.217.196, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: RO 🇷🇴 Bucharest 4, server: 185.102.217.197, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: RU 🇷🇺 Moscow 1, server: 92.38.138.139, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: RU 🇷🇺 Moscow 2, server: 92.38.138.112, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: RU 🇷🇺 Moscow 3, server: 92.38.138.53, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: RU 🇷🇺 Moscow 4, server: 92.38.138.150, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: RS 🇷🇸 Belgrade 1, server: 152.89.160.147, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: RS 🇷🇸 Belgrade 2, server: 152.89.160.211, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: RS 🇷🇸 Belgrade 3, server: 152.89.160.148, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: RS 🇷🇸 Belgrade 4, server: 152.89.160.149, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: SK 🇸🇰 Bratislava 1, server: 185.76.8.215, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: SK 🇸🇰 Bratislava 2, server: 185.76.8.211, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: SK 🇸🇰 Bratislava 3, server: 185.76.8.212, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: SK 🇸🇰 Bratislava 4, server: 185.76.8.213, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: SI 🇸🇮 Ljubljana 1, server: 195.158.249.61, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: SI 🇸🇮 Ljubljana 2, server: 195.158.249.40, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: SI 🇸🇮 Ljubljana 3, server: 195.158.249.42, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: SI 🇸🇮 Ljubljana 4, server: 195.158.249.50, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: ES 🇪🇸 Barcelona 1, server: 185.188.61.83, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: ES 🇪🇸 Barcelona 2, server: 185.188.61.84, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: ES 🇪🇸 Barcelona 3, server: 185.188.61.85, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: ES 🇪🇸 Barcelona 4, server: 185.188.61.86, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: ES 🇪🇸 Madrid 1, server: 89.37.95.13, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: ES 🇪🇸 Madrid 2, server: 89.37.95.14, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: ES 🇪🇸 Madrid 3, server: 89.37.95.15, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: ES 🇪🇸 Madrid 4, server: 212.102.48.20, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: ES 🇪🇸 Valencia 1, server: 185.153.150.50, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: ES 🇪🇸 Valencia 2, server: 185.153.150.51, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: ES 🇪🇸 Valencia 3, server: 185.153.150.52, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: ES 🇪🇸 Valencia 4, server: 185.153.150.53, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: SE 🇸🇪 Stockholm 1, server: 185.76.9.51, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: SE 🇸🇪 Stockholm 2, server: 185.76.9.52, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: SE 🇸🇪 Stockholm 3, server: 185.76.9.46, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: SE 🇸🇪 Stockholm 4, server: 185.76.9.55, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: GB 🇬🇧 London 1, server: 185.134.22.115, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: GB 🇬🇧 London 2, server: 185.38.148.232, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: GB 🇬🇧 London 3, server: 185.16.206.69, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: GB 🇬🇧 London 4, server: 5.226.139.232, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: GB 🇬🇧 Glasgow 1, server: 185.108.105.127, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: GB 🇬🇧 Glasgow 2, server: 185.108.105.81, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: GB 🇬🇧 Glasgow 3, server: 185.108.105.97, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: GB 🇬🇧 Glasgow 4, server: 185.108.105.82, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: GB 🇬🇧 Manchester 1, server: 89.238.130.253, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: GB 🇬🇧 Manchester 2, server: 194.37.98.220, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: GB 🇬🇧 Manchester 3, server: 192.145.126.131, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: GB 🇬🇧 Manchester 4, server: 89.238.133.123, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: US 🇺🇸 Latham 1, server: 45.43.19.92, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: US 🇺🇸 Latham 2, server: 192.154.248.179, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: US 🇺🇸 Latham 3, server: 45.43.19.68, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: US 🇺🇸 Latham 4, server: 45.43.19.82, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: US 🇺🇸 Boston 1, server: 173.237.207.66, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: US 🇺🇸 Boston 2, server: 173.237.207.67, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: US 🇺🇸 Boston 3, server: 173.237.207.23, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: US 🇺🇸 Boston 4, server: 173.237.207.64, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: US 🇺🇸 Buffalo 1, server: 172.93.153.148, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: US 🇺🇸 Buffalo 2, server: 107.175.104.84, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: US 🇺🇸 Buffalo 3, server: 64.44.42.60, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: US 🇺🇸 Buffalo 4, server: 172.93.146.210, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: US 🇺🇸 New York 1, server: 84.17.35.111, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: US 🇺🇸 New York 2, server: 37.19.199.196, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: US 🇺🇸 New York 3, server: 84.17.35.103, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: US 🇺🇸 New York 4, server: 37.19.199.224, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: US 🇺🇸 Seattle 1, server: 212.102.46.67, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: US 🇺🇸 Seattle 2, server: 212.102.46.71, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: US 🇺🇸 Seattle 3, server: 212.102.46.69, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: US 🇺🇸 Seattle 4, server: 212.102.46.42, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: US 🇺🇸 Chicago 1, server: 185.246.209.52, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: US 🇺🇸 Chicago 2, server: 185.246.209.55, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: US 🇺🇸 Chicago 3, server: 138.199.42.151, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: US 🇺🇸 Chicago 4, server: 185.246.209.57, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: US 🇺🇸 Detroit 1, server: 104.244.208.227, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: US 🇺🇸 Detroit 2, server: 104.244.211.179, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: US 🇺🇸 Detroit 3, server: 104.244.208.35, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: US 🇺🇸 Detroit 4, server: 104.244.211.181, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: US 🇺🇸 Denver 1, server: 212.102.44.87, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: US 🇺🇸 Denver 2, server: 212.102.44.91, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: US 🇺🇸 Denver 3, server: 212.102.44.71, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: US 🇺🇸 Denver 4, server: 212.102.44.81, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: US 🇺🇸 Bend 1, server: 154.16.168.186, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: US 🇺🇸 Bend 2, server: 154.16.168.184, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: US 🇺🇸 Bend 3, server: 45.43.14.73, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: US 🇺🇸 Bend 4, server: 45.43.14.75, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: US 🇺🇸 Kansas City 1, server: 173.208.149.195, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: US 🇺🇸 Kansas City 2, server: 63.141.236.245, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: US 🇺🇸 Kansas City 3, server: 204.12.198.222, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: US 🇺🇸 Kansas City 4, server: 173.208.202.59, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: US 🇺🇸 Salt Lake City 1, server: 104.200.131.7, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: US 🇺🇸 Salt Lake City 2, server: 104.200.131.245, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: US 🇺🇸 Salt Lake City 3, server: 104.200.131.233, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: US 🇺🇸 Salt Lake City 4, server: 104.200.131.5, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: US 🇺🇸 St. Louis 1, server: 148.72.174.36, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: US 🇺🇸 St. Louis 2, server: 148.72.174.38, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: US 🇺🇸 St. Louis 3, server: 148.72.171.178, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: US 🇺🇸 St. Louis 4, server: 148.72.174.51, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: US 🇺🇸 Tampa 1, server: 209.216.92.8, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: US 🇺🇸 Tampa 2, server: 209.216.85.165, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: US 🇺🇸 Tampa 3, server: 209.216.92.200, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: US 🇺🇸 Tampa 4, server: 209.216.92.215, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: US 🇺🇸 Miami 1, server: 212.102.61.148, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: US 🇺🇸 Miami 2, server: 212.102.61.136, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: US 🇺🇸 Miami 3, server: 89.38.227.173, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: US 🇺🇸 Miami 4, server: 212.102.61.138, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: US 🇺🇸 Charlotte 1, server: 155.254.29.163, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: US 🇺🇸 Charlotte 2, server: 155.254.29.165, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: US 🇺🇸 Charlotte 3, server: 154.16.171.213, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: US 🇺🇸 Charlotte 4, server: 192.154.254.135, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: US 🇺🇸 Dallas 1, server: 89.187.175.165, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: US 🇺🇸 Dallas 2, server: 206.217.202.90, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: US 🇺🇸 Dallas 3, server: 206.217.202.66, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: US 🇺🇸 Dallas 4, server: 89.187.175.167, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: US 🇺🇸 Phoenix 1, server: 199.58.187.5, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: US 🇺🇸 Phoenix 2, server: 199.58.187.18, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: US 🇺🇸 Phoenix 3, server: 172.98.87.37, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: US 🇺🇸 Phoenix 4, server: 199.58.187.67, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: US 🇺🇸 Atlanta 1, server: 45.134.140.17, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: US 🇺🇸 Atlanta 2, server: 138.199.2.135, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: US 🇺🇸 Atlanta 3, server: 45.134.140.4, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: US 🇺🇸 Atlanta 4, server: 66.115.175.50, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: US 🇺🇸 Orlando 1, server: 198.147.22.85, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: US 🇺🇸 Orlando 2, server: 198.147.22.197, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: US 🇺🇸 Orlando 3, server: 66.115.182.43, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: US 🇺🇸 Orlando 4, server: 66.115.182.74, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: US 🇺🇸 Las Vegas 1, server: 79.110.54.133, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: US 🇺🇸 Las Vegas 2, server: 79.110.54.125, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: US 🇺🇸 Las Vegas 3, server: 79.110.53.205, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: US 🇺🇸 Las Vegas 4, server: 79.110.54.123, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: US 🇺🇸 Los Angeles 1, server: 89.187.187.76, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: US 🇺🇸 Los Angeles 2, server: 138.199.9.204, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: US 🇺🇸 Los Angeles 3, server: 138.199.9.193, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: US 🇺🇸 Los Angeles 4, server: 89.187.187.68, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: US 🇺🇸 San Francisco 1, server: 23.81.181.9, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: US 🇺🇸 San Francisco 2, server: 185.124.240.151, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: US 🇺🇸 San Francisco 3, server: 185.124.240.157, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: US 🇺🇸 San Francisco 4, server: 185.124.240.155, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: US 🇺🇸 Ashburn 1, server: 37.19.220.201, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: US 🇺🇸 Ashburn 2, server: 37.19.220.199, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: US 🇺🇸 Ashburn 3, server: 37.19.220.196, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: US 🇺🇸 Ashburn 4, server: 37.19.220.194, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: US 🇺🇸 Houston 1, server: 199.10.64.85, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: US 🇺🇸 Houston 2, server: 199.10.64.131, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: US 🇺🇸 Houston 3, server: 199.10.64.197, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: US 🇺🇸 Houston 4, server: 199.10.64.179, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: US 🇺🇸 San Jose 1, server: 156.146.54.53, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: US 🇺🇸 San Jose 2, server: 156.146.54.54, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: US 🇺🇸 San Jose 3, server: 156.146.54.56, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: US 🇺🇸 San Jose 4, server: 156.146.54.57, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: BA 🇧🇦 Sarajevo, server: 185.99.3.146, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: BG 🇧🇬 Sofia, server: 217.138.202.21, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: CZ 🇨🇿 Prague, server: 217.138.199.181, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: GR 🇬🇷 Athens, server: 194.150.167.54, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: HU 🇭🇺 Budapest, server: 185.252.223.83, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: IS 🇮🇸 Reykjavik, server: 45.133.193.221, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: MD 🇲🇩 Chisinau, server: 194.33.40.114, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: MK 🇲🇰 Skopje, server: 185.225.28.85, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: UA 🇺🇦 Kyiv, server: 156.146.50.102, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: AR 🇦🇷 Buenos Aires, server: 91.206.168.64, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: BR 🇧🇷 Sao Paulo, server: 138.199.58.70, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: CA 🇨🇦 Montreal, server: 91.245.254.131, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: CA 🇨🇦 Toronto, server: 37.19.211.114, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: CA 🇨🇦 Vancouver, server: 66.115.147.92, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: CO 🇨🇴 Bogota, server: 45.129.32.32, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: CR 🇨🇷 San Jose, server: 176.227.241.35, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: MT 🇲🇹 Valletta, server: 130.185.255.36, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: MX 🇲🇽 Mexico City, server: 194.41.112.16, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: AU 🇦🇺 Perth, server: 124.150.139.83, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: AU 🇦🇺 Adelaide, server: 45.248.79.37, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: AU 🇦🇺 Brisbane, server: 144.48.39.133, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: AU 🇦🇺 Melbourne, server: 103.192.80.245, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: AU 🇦🇺 Sydney, server: 45.125.247.45, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: HK 🇭🇰 Hong Kong, server: 212.102.42.89, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: IN 🇮🇳 Indore, server: 103.73.189.61, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: IN 🇮🇳 Mumbai, server: 129.227.219.24, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: IN 🇮🇳 Chennai, server: 103.108.117.118, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: ID 🇮🇩 Jakarta, server: 103.120.66.229, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: JP 🇯🇵 Tokyo, server: 84.17.34.26, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: KZ 🇰🇿 Oral, server: 5.189.202.11, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: My 🇲🇾 Kuala Lumpur, server: 42.0.30.164, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: Nz 🇳🇿 Auckland, server: 180.149.231.165, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: PH 🇵🇭 Manila, server: 45.134.224.29, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: SG 🇸🇬 Singapore, server: 89.187.163.195, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: KR 🇰🇷 Seoul, server: 45.130.137.50, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: TW 🇹🇼 Taichung City, server: 103.152.151.85, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: TH 🇹🇭 Bangkok, server: 27.131.164.109, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: IL 🇮🇱 Tel Aviv, server: 84.110.41.85, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: NG 🇳🇬 Lagos, server: 102.165.23.44, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: ZA 🇿🇦 Johannesburg, server: 102.165.47.134, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: AE 🇦🇪 Dubai, server: 176.125.231.35, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: PA 🇵🇦 Panama, server: 185.244.139.9, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: PE 🇵🇪 Lima, server: 193.218.35.12, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: VE 🇻🇪 Caracas, server: 45.149.3.7, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  - {name: GE 🇬🇪 Tbilisi, server: 91.239.207.226, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z, udp: true}
+  
+proxy-groups:
+  - name: 🔥 Auto
+    type: url-test
+    proxies:
+      - BE 🇧🇪 Brussels 1
+      - BE 🇧🇪 Brussels 2
+      - BE 🇧🇪 Brussels 3
+      - BE 🇧🇪 Brussels 4
+      - BE 🇧🇪 Antwerp 1
+      - BE 🇧🇪 Antwerp 2
+      - BE 🇧🇪 Antwerp 3
+      - BE 🇧🇪 Antwerp 4
+      - LU 🇱🇺 Luxembourg 1
+      - LU 🇱🇺 Luxembourg 2
+      - LU 🇱🇺 Luxembourg 3
+      - LU 🇱🇺 Luxembourg 4
+      - NO 🇳🇴 Oslo 1
+      - NO 🇳🇴 Oslo 2
+      - NO 🇳🇴 Oslo 3
+      - NO 🇳🇴 Oslo 4
+      - PL 🇵🇱 Gdansk 1
+      - PL 🇵🇱 Gdansk 2
+      - PL 🇵🇱 Gdansk 3
+      - PL 🇵🇱 Gdansk 4
+      - PL 🇵🇱 Warsaw 1
+      - PL 🇵🇱 Warsaw 2
+      - PL 🇵🇱 Warsaw 3
+      - PL 🇵🇱 Warsaw 4
+      - FR 🇫🇷 Paris 1
+      - FR 🇫🇷 Paris 2
+      - FR 🇫🇷 Paris 3
+      - FR 🇫🇷 Paris 4
+      - FR 🇫🇷 Marseille 1
+      - FR 🇫🇷 Marseille 2
+      - FR 🇫🇷 Marseille 3
+      - FR 🇫🇷 Marseille 4
+      - FR 🇫🇷 Bordeaux 1
+      - FR 🇫🇷 Bordeaux 2
+      - FR 🇫🇷 Bordeaux 3
+      - FR 🇫🇷 Bordeaux 4
+      - DE 🇩🇪 Berlin 1
+      - DE 🇩🇪 Berlin 2
+      - DE 🇩🇪 Berlin 3
+      - DE 🇩🇪 Berlin 4
+      - DE 🇩🇪 Frankfurt am Main 1
+      - DE 🇩🇪 Frankfurt am Main 2
+      - DE 🇩🇪 Frankfurt am Main 3
+      - DE 🇩🇪 Frankfurt am Main 4
+      - AZ 🇦🇿 Baku 1
+      - AZ 🇦🇿 Baku 2
+      - AZ 🇦🇿 Baku 3
+      - AZ 🇦🇿 Baku 4
+      - NL 🇳🇱 Amsterdam 1
+      - NL 🇳🇱 Amsterdam 2
+      - NL 🇳🇱 Amsterdam 3
+      - NL 🇳🇱 Amsterdam 4
+      - DK 🇩🇰 Copenhagen 1
+      - DK 🇩🇰 Copenhagen 2
+      - DK 🇩🇰 Copenhagen 3
+      - DK 🇩🇰 Copenhagen 4
+      - IT 🇮🇹 Rome 1
+      - IT 🇮🇹 Rome 2
+      - IT 🇮🇹 Rome 3
+      - IT 🇮🇹 Rome 4
+      - IT 🇮🇹 Milan 1
+      - IT 🇮🇹 Milan 2
+      - IT 🇮🇹 Milan 3
+      - IT 🇮🇹 Milan 4
+      - FI 🇫🇮 Helsinki 1
+      - FI 🇫🇮 Helsinki 2
+      - FI 🇫🇮 Helsinki 3
+      - FI 🇫🇮 Helsinki 4
+      - CH 🇨🇭 Zurich 1
+      - CH 🇨🇭 Zurich 2
+      - CH 🇨🇭 Zurich 3
+      - CH 🇨🇭 Zurich 4
+      - TR 🇹🇷 Istanbul 1
+      - TR 🇹🇷 Istanbul 2
+      - TR 🇹🇷 Istanbul 3
+      - TR 🇹🇷 Istanbul 4
+      - AL 🇦🇱 Tirana 1
+      - AL 🇦🇱 Tirana 2
+      - AL 🇦🇱 Tirana 3
+      - AL 🇦🇱 Tirana 4
+      - DZ 🇩🇿 Algiers 1
+      - DZ 🇩🇿 Algiers 2
+      - DZ 🇩🇿 Algiers 3
+      - DZ 🇩🇿 Algiers 4
+      - AT 🇦🇹 Vienna 1
+      - AT 🇦🇹 Vienna 2
+      - AT 🇦🇹 Vienna 3
+      - AT 🇦🇹 Vienna 4
+      - HR 🇭🇷 Zagreb 1
+      - HR 🇭🇷 Zagreb 2
+      - HR 🇭🇷 Zagreb 3
+      - HR 🇭🇷 Zagreb 4
+      - CY 🇨🇾 Nicosia 1
+      - CY 🇨🇾 Nicosia 2
+      - CY 🇨🇾 Nicosia 3
+      - CY 🇨🇾 Nicosia 4
+      - EE 🇪🇪 Tallinn 1
+      - EE 🇪🇪 Tallinn 2
+      - EE 🇪🇪 Tallinn 3
+      - EE 🇪🇪 Tallinn 4
+      - IE 🇮🇪 Dublin 1
+      - IE 🇮🇪 Dublin 2
+      - IE 🇮🇪 Dublin 3
+      - IE 🇮🇪 Dublin 4
+      - LV 🇱🇻 Riga 1
+      - LV 🇱🇻 Riga 2
+      - LV 🇱🇻 Riga 3
+      - LV 🇱🇻 Riga 4
+      - PT 🇵🇹 Lisbon 1
+      - PT 🇵🇹 Lisbon 2
+      - PT 🇵🇹 Lisbon 3
+      - PT 🇵🇹 Lisbon 4
+      - PT 🇵🇹 Porto 1
+      - PT 🇵🇹 Porto 2
+      - PT 🇵🇹 Porto 3
+      - PT 🇵🇹 Porto 4
+      - RO 🇷🇴 Bucharest 1
+      - RO 🇷🇴 Bucharest 2
+      - RO 🇷🇴 Bucharest 3
+      - RO 🇷🇴 Bucharest 4
+      - RU 🇷🇺 Moscow 1
+      - RU 🇷🇺 Moscow 2
+      - RU 🇷🇺 Moscow 3
+      - RU 🇷🇺 Moscow 4
+      - RS 🇷🇸 Belgrade 1
+      - RS 🇷🇸 Belgrade 2
+      - RS 🇷🇸 Belgrade 3
+      - RS 🇷🇸 Belgrade 4
+      - SK 🇸🇰 Bratislava 1
+      - SK 🇸🇰 Bratislava 2
+      - SK 🇸🇰 Bratislava 3
+      - SK 🇸🇰 Bratislava 4
+      - SI 🇸🇮 Ljubljana 1
+      - SI 🇸🇮 Ljubljana 2
+      - SI 🇸🇮 Ljubljana 3
+      - SI 🇸🇮 Ljubljana 4
+      - ES 🇪🇸 Barcelona 1
+      - ES 🇪🇸 Barcelona 2
+      - ES 🇪🇸 Barcelona 3
+      - ES 🇪🇸 Barcelona 4
+      - ES 🇪🇸 Madrid 1
+      - ES 🇪🇸 Madrid 2
+      - ES 🇪🇸 Madrid 3
+      - ES 🇪🇸 Madrid 4
+      - ES 🇪🇸 Valencia 1
+      - ES 🇪🇸 Valencia 2
+      - ES 🇪🇸 Valencia 3
+      - ES 🇪🇸 Valencia 4
+      - SE 🇸🇪 Stockholm 1
+      - SE 🇸🇪 Stockholm 2
+      - SE 🇸🇪 Stockholm 3
+      - SE 🇸🇪 Stockholm 4
+      - GB 🇬🇧 London 1
+      - GB 🇬🇧 London 2
+      - GB 🇬🇧 London 3
+      - GB 🇬🇧 London 4
+      - GB 🇬🇧 Glasgow 1
+      - GB 🇬🇧 Glasgow 2
+      - GB 🇬🇧 Glasgow 3
+      - GB 🇬🇧 Glasgow 4
+      - GB 🇬🇧 Manchester 1
+      - GB 🇬🇧 Manchester 2
+      - GB 🇬🇧 Manchester 3
+      - GB 🇬🇧 Manchester 4
+      - US 🇺🇸 Latham 1
+      - US 🇺🇸 Latham 2
+      - US 🇺🇸 Latham 3
+      - US 🇺🇸 Latham 4
+      - US 🇺🇸 Boston 1
+      - US 🇺🇸 Boston 2
+      - US 🇺🇸 Boston 3
+      - US 🇺🇸 Boston 4
+      - US 🇺🇸 Buffalo 1
+      - US 🇺🇸 Buffalo 2
+      - US 🇺🇸 Buffalo 3
+      - US 🇺🇸 Buffalo 4
+      - US 🇺🇸 New York 1
+      - US 🇺🇸 New York 2
+      - US 🇺🇸 New York 3
+      - US 🇺🇸 New York 4
+      - US 🇺🇸 Seattle 1
+      - US 🇺🇸 Seattle 2
+      - US 🇺🇸 Seattle 3
+      - US 🇺🇸 Seattle 4
+      - US 🇺🇸 Chicago 1
+      - US 🇺🇸 Chicago 2
+      - US 🇺🇸 Chicago 3
+      - US 🇺🇸 Chicago 4
+      - US 🇺🇸 Detroit 1
+      - US 🇺🇸 Detroit 2
+      - US 🇺🇸 Detroit 3
+      - US 🇺🇸 Detroit 4
+      - US 🇺🇸 Denver 1
+      - US 🇺🇸 Denver 2
+      - US 🇺🇸 Denver 3
+      - US 🇺🇸 Denver 4
+      - US 🇺🇸 Bend 1
+      - US 🇺🇸 Bend 2
+      - US 🇺🇸 Bend 3
+      - US 🇺🇸 Bend 4
+      - US 🇺🇸 Kansas City 1
+      - US 🇺🇸 Kansas City 2
+      - US 🇺🇸 Kansas City 3
+      - US 🇺🇸 Kansas City 4
+      - US 🇺🇸 Salt Lake City 1
+      - US 🇺🇸 Salt Lake City 2
+      - US 🇺🇸 Salt Lake City 3
+      - US 🇺🇸 Salt Lake City 4
+      - US 🇺🇸 St. Louis 1
+      - US 🇺🇸 St. Louis 2
+      - US 🇺🇸 St. Louis 3
+      - US 🇺🇸 St. Louis 4
+      - US 🇺🇸 Tampa 1
+      - US 🇺🇸 Tampa 2
+      - US 🇺🇸 Tampa 3
+      - US 🇺🇸 Tampa 4
+      - US 🇺🇸 Miami 1
+      - US 🇺🇸 Miami 2
+      - US 🇺🇸 Miami 3
+      - US 🇺🇸 Miami 4
+      - US 🇺🇸 Charlotte 1
+      - US 🇺🇸 Charlotte 2
+      - US 🇺🇸 Charlotte 3
+      - US 🇺🇸 Charlotte 4
+      - US 🇺🇸 Dallas 1
+      - US 🇺🇸 Dallas 2
+      - US 🇺🇸 Dallas 3
+      - US 🇺🇸 Dallas 4
+      - US 🇺🇸 Phoenix 1
+      - US 🇺🇸 Phoenix 2
+      - US 🇺🇸 Phoenix 3
+      - US 🇺🇸 Phoenix 4
+      - US 🇺🇸 Atlanta 1
+      - US 🇺🇸 Atlanta 2
+      - US 🇺🇸 Atlanta 3
+      - US 🇺🇸 Atlanta 4
+      - US 🇺🇸 Orlando 1
+      - US 🇺🇸 Orlando 2
+      - US 🇺🇸 Orlando 3
+      - US 🇺🇸 Orlando 4
+      - US 🇺🇸 Las Vegas 1
+      - US 🇺🇸 Las Vegas 2
+      - US 🇺🇸 Las Vegas 3
+      - US 🇺🇸 Las Vegas 4
+      - US 🇺🇸 Los Angeles 1
+      - US 🇺🇸 Los Angeles 2
+      - US 🇺🇸 Los Angeles 3
+      - US 🇺🇸 Los Angeles 4
+      - US 🇺🇸 San Francisco 1
+      - US 🇺🇸 San Francisco 2
+      - US 🇺🇸 San Francisco 3
+      - US 🇺🇸 San Francisco 4
+      - US 🇺🇸 Ashburn 1
+      - US 🇺🇸 Ashburn 2
+      - US 🇺🇸 Ashburn 3
+      - US 🇺🇸 Ashburn 4
+      - US 🇺🇸 Houston 1
+      - US 🇺🇸 Houston 2
+      - US 🇺🇸 Houston 3
+      - US 🇺🇸 Houston 4
+      - US 🇺🇸 San Jose 1
+      - US 🇺🇸 San Jose 2
+      - US 🇺🇸 San Jose 3
+      - US 🇺🇸 San Jose 4
+      - BA 🇧🇦 Sarajevo
+      - BG 🇧🇬 Sofia
+      - CZ 🇨🇿 Prague
+      - GR 🇬🇷 Athens
+      - HU 🇭🇺 Budapest
+      - IS 🇮🇸 Reykjavik
+      - MD 🇲🇩 Chisinau
+      - MK 🇲🇰 Skopje
+      - UA 🇺🇦 Kyiv
+      - AR 🇦🇷 Buenos Aires
+      - BR 🇧🇷 Sao Paulo
+      - CA 🇨🇦 Montreal
+      - CA 🇨🇦 Toronto
+      - CA 🇨🇦 Vancouver
+      - CO 🇨🇴 Bogota
+      - CR 🇨🇷 San Jose
+      - MT 🇲🇹 Valletta
+      - MX 🇲🇽 Mexico City
+      - AU 🇦🇺 Perth
+      - AU 🇦🇺 Adelaide
+      - AU 🇦🇺 Brisbane
+      - AU 🇦🇺 Melbourne
+      - AU 🇦🇺 Sydney
+      - HK 🇭🇰 Hong Kong
+      - IN 🇮🇳 Indore
+      - IN 🇮🇳 Mumbai
+      - IN 🇮🇳 Chennai
+      - ID 🇮🇩 Jakarta
+      - JP 🇯🇵 Tokyo
+      - KZ 🇰🇿 Oral
+      - My 🇲🇾 Kuala Lumpur
+      - Nz 🇳🇿 Auckland
+      - PH 🇵🇭 Manila
+      - SG 🇸🇬 Singapore
+      - KR 🇰🇷 Seoul
+      - TW 🇹🇼 Taichung City
+      - TH 🇹🇭 Bangkok
+      - IL 🇮🇱 Tel Aviv
+      - NG 🇳🇬 Lagos
+      - ZA 🇿🇦 Johannesburg
+      - AE 🇦🇪 Dubai  
+      - PA 🇵🇦 Panama
+      - PE 🇵🇪 Lima
+      - VE 🇻🇪 Caracas
+      - GE 🇬🇪 Tbilisi
+
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 300
+
+  - name: 🔰 Select
+    type: select
+    proxies:
+      - 🔥 Auto
+      - ✅ Direct
+      - BE 🇧🇪 Brussels 1
+      - BE 🇧🇪 Brussels 2
+      - BE 🇧🇪 Brussels 3
+      - BE 🇧🇪 Brussels 4
+      - BE 🇧🇪 Antwerp 1
+      - BE 🇧🇪 Antwerp 2
+      - BE 🇧🇪 Antwerp 3
+      - BE 🇧🇪 Antwerp 4
+      - LU 🇱🇺 Luxembourg 1
+      - LU 🇱🇺 Luxembourg 2
+      - LU 🇱🇺 Luxembourg 3
+      - LU 🇱🇺 Luxembourg 4
+      - NO 🇳🇴 Oslo 1
+      - NO 🇳🇴 Oslo 2
+      - NO 🇳🇴 Oslo 3
+      - NO 🇳🇴 Oslo 4
+      - PL 🇵🇱 Gdansk 1
+      - PL 🇵🇱 Gdansk 2
+      - PL 🇵🇱 Gdansk 3
+      - PL 🇵🇱 Gdansk 4
+      - PL 🇵🇱 Warsaw 1
+      - PL 🇵🇱 Warsaw 2
+      - PL 🇵🇱 Warsaw 3
+      - PL 🇵🇱 Warsaw 4
+      - FR 🇫🇷 Paris 1
+      - FR 🇫🇷 Paris 2
+      - FR 🇫🇷 Paris 3
+      - FR 🇫🇷 Paris 4
+      - FR 🇫🇷 Marseille 1
+      - FR 🇫🇷 Marseille 2
+      - FR 🇫🇷 Marseille 3
+      - FR 🇫🇷 Marseille 4
+      - FR 🇫🇷 Bordeaux 1
+      - FR 🇫🇷 Bordeaux 2
+      - FR 🇫🇷 Bordeaux 3
+      - FR 🇫🇷 Bordeaux 4
+      - DE 🇩🇪 Berlin 1
+      - DE 🇩🇪 Berlin 2
+      - DE 🇩🇪 Berlin 3
+      - DE 🇩🇪 Berlin 4
+      - DE 🇩🇪 Frankfurt am Main 1
+      - DE 🇩🇪 Frankfurt am Main 2
+      - DE 🇩🇪 Frankfurt am Main 3
+      - DE 🇩🇪 Frankfurt am Main 4
+      - AZ 🇦🇿 Baku 1
+      - AZ 🇦🇿 Baku 2
+      - AZ 🇦🇿 Baku 3
+      - AZ 🇦🇿 Baku 4
+      - NL 🇳🇱 Amsterdam 1
+      - NL 🇳🇱 Amsterdam 2
+      - NL 🇳🇱 Amsterdam 3
+      - NL 🇳🇱 Amsterdam 4
+      - DK 🇩🇰 Copenhagen 1
+      - DK 🇩🇰 Copenhagen 2
+      - DK 🇩🇰 Copenhagen 3
+      - DK 🇩🇰 Copenhagen 4
+      - IT 🇮🇹 Rome 1
+      - IT 🇮🇹 Rome 2
+      - IT 🇮🇹 Rome 3
+      - IT 🇮🇹 Rome 4
+      - IT 🇮🇹 Milan 1
+      - IT 🇮🇹 Milan 2
+      - IT 🇮🇹 Milan 3
+      - IT 🇮🇹 Milan 4
+      - FI 🇫🇮 Helsinki 1
+      - FI 🇫🇮 Helsinki 2
+      - FI 🇫🇮 Helsinki 3
+      - FI 🇫🇮 Helsinki 4
+      - CH 🇨🇭 Zurich 1
+      - CH 🇨🇭 Zurich 2
+      - CH 🇨🇭 Zurich 3
+      - CH 🇨🇭 Zurich 4
+      - TR 🇹🇷 Istanbul 1
+      - TR 🇹🇷 Istanbul 2
+      - TR 🇹🇷 Istanbul 3
+      - TR 🇹🇷 Istanbul 4
+      - AL 🇦🇱 Tirana 1
+      - AL 🇦🇱 Tirana 2
+      - AL 🇦🇱 Tirana 3
+      - AL 🇦🇱 Tirana 4
+      - DZ 🇩🇿 Algiers 1
+      - DZ 🇩🇿 Algiers 2
+      - DZ 🇩🇿 Algiers 3
+      - DZ 🇩🇿 Algiers 4
+      - AT 🇦🇹 Vienna 1
+      - AT 🇦🇹 Vienna 2
+      - AT 🇦🇹 Vienna 3
+      - AT 🇦🇹 Vienna 4
+      - HR 🇭🇷 Zagreb 1
+      - HR 🇭🇷 Zagreb 2
+      - HR 🇭🇷 Zagreb 3
+      - HR 🇭🇷 Zagreb 4
+      - CY 🇨🇾 Nicosia 1
+      - CY 🇨🇾 Nicosia 2
+      - CY 🇨🇾 Nicosia 3
+      - CY 🇨🇾 Nicosia 4
+      - EE 🇪🇪 Tallinn 1
+      - EE 🇪🇪 Tallinn 2
+      - EE 🇪🇪 Tallinn 3
+      - EE 🇪🇪 Tallinn 4
+      - IE 🇮🇪 Dublin 1
+      - IE 🇮🇪 Dublin 2
+      - IE 🇮🇪 Dublin 3
+      - IE 🇮🇪 Dublin 4
+      - LV 🇱🇻 Riga 1
+      - LV 🇱🇻 Riga 2
+      - LV 🇱🇻 Riga 3
+      - LV 🇱🇻 Riga 4
+      - PT 🇵🇹 Lisbon 1
+      - PT 🇵🇹 Lisbon 2
+      - PT 🇵🇹 Lisbon 3
+      - PT 🇵🇹 Lisbon 4
+      - PT 🇵🇹 Porto 1
+      - PT 🇵🇹 Porto 2
+      - PT 🇵🇹 Porto 3
+      - PT 🇵🇹 Porto 4
+      - RO 🇷🇴 Bucharest 1
+      - RO 🇷🇴 Bucharest 2
+      - RO 🇷🇴 Bucharest 3
+      - RO 🇷🇴 Bucharest 4
+      - RU 🇷🇺 Moscow 1
+      - RU 🇷🇺 Moscow 2
+      - RU 🇷🇺 Moscow 3
+      - RU 🇷🇺 Moscow 4
+      - RS 🇷🇸 Belgrade 1
+      - RS 🇷🇸 Belgrade 2
+      - RS 🇷🇸 Belgrade 3
+      - RS 🇷🇸 Belgrade 4
+      - SK 🇸🇰 Bratislava 1
+      - SK 🇸🇰 Bratislava 2
+      - SK 🇸🇰 Bratislava 3
+      - SK 🇸🇰 Bratislava 4
+      - SI 🇸🇮 Ljubljana 1
+      - SI 🇸🇮 Ljubljana 2
+      - SI 🇸🇮 Ljubljana 3
+      - SI 🇸🇮 Ljubljana 4
+      - ES 🇪🇸 Barcelona 1
+      - ES 🇪🇸 Barcelona 2
+      - ES 🇪🇸 Barcelona 3
+      - ES 🇪🇸 Barcelona 4
+      - ES 🇪🇸 Madrid 1
+      - ES 🇪🇸 Madrid 2
+      - ES 🇪🇸 Madrid 3
+      - ES 🇪🇸 Madrid 4
+      - ES 🇪🇸 Valencia 1
+      - ES 🇪🇸 Valencia 2
+      - ES 🇪🇸 Valencia 3
+      - ES 🇪🇸 Valencia 4
+      - SE 🇸🇪 Stockholm 1
+      - SE 🇸🇪 Stockholm 2
+      - SE 🇸🇪 Stockholm 3
+      - SE 🇸🇪 Stockholm 4
+      - GB 🇬🇧 London 1
+      - GB 🇬🇧 London 2
+      - GB 🇬🇧 London 3
+      - GB 🇬🇧 London 4
+      - GB 🇬🇧 Glasgow 1
+      - GB 🇬🇧 Glasgow 2
+      - GB 🇬🇧 Glasgow 3
+      - GB 🇬🇧 Glasgow 4
+      - GB 🇬🇧 Manchester 1
+      - GB 🇬🇧 Manchester 2
+      - GB 🇬🇧 Manchester 3
+      - GB 🇬🇧 Manchester 4
+      - US 🇺🇸 Latham 1
+      - US 🇺🇸 Latham 2
+      - US 🇺🇸 Latham 3
+      - US 🇺🇸 Latham 4
+      - US 🇺🇸 Boston 1
+      - US 🇺🇸 Boston 2
+      - US 🇺🇸 Boston 3
+      - US 🇺🇸 Boston 4
+      - US 🇺🇸 Buffalo 1
+      - US 🇺🇸 Buffalo 2
+      - US 🇺🇸 Buffalo 3
+      - US 🇺🇸 Buffalo 4
+      - US 🇺🇸 New York 1
+      - US 🇺🇸 New York 2
+      - US 🇺🇸 New York 3
+      - US 🇺🇸 New York 4
+      - US 🇺🇸 Seattle 1
+      - US 🇺🇸 Seattle 2
+      - US 🇺🇸 Seattle 3
+      - US 🇺🇸 Seattle 4
+      - US 🇺🇸 Chicago 1
+      - US 🇺🇸 Chicago 2
+      - US 🇺🇸 Chicago 3
+      - US 🇺🇸 Chicago 4
+      - US 🇺🇸 Detroit 1
+      - US 🇺🇸 Detroit 2
+      - US 🇺🇸 Detroit 3
+      - US 🇺🇸 Detroit 4
+      - US 🇺🇸 Denver 1
+      - US 🇺🇸 Denver 2
+      - US 🇺🇸 Denver 3
+      - US 🇺🇸 Denver 4
+      - US 🇺🇸 Bend 1
+      - US 🇺🇸 Bend 2
+      - US 🇺🇸 Bend 3
+      - US 🇺🇸 Bend 4
+      - US 🇺🇸 Kansas City 1
+      - US 🇺🇸 Kansas City 2
+      - US 🇺🇸 Kansas City 3
+      - US 🇺🇸 Kansas City 4
+      - US 🇺🇸 Salt Lake City 1
+      - US 🇺🇸 Salt Lake City 2
+      - US 🇺🇸 Salt Lake City 3
+      - US 🇺🇸 Salt Lake City 4
+      - US 🇺🇸 St. Louis 1
+      - US 🇺🇸 St. Louis 2
+      - US 🇺🇸 St. Louis 3
+      - US 🇺🇸 St. Louis 4
+      - US 🇺🇸 Tampa 1
+      - US 🇺🇸 Tampa 2
+      - US 🇺🇸 Tampa 3
+      - US 🇺🇸 Tampa 4
+      - US 🇺🇸 Miami 1
+      - US 🇺🇸 Miami 2
+      - US 🇺🇸 Miami 3
+      - US 🇺🇸 Miami 4
+      - US 🇺🇸 Charlotte 1
+      - US 🇺🇸 Charlotte 2
+      - US 🇺🇸 Charlotte 3
+      - US 🇺🇸 Charlotte 4
+      - US 🇺🇸 Dallas 1
+      - US 🇺🇸 Dallas 2
+      - US 🇺🇸 Dallas 3
+      - US 🇺🇸 Dallas 4
+      - US 🇺🇸 Phoenix 1
+      - US 🇺🇸 Phoenix 2
+      - US 🇺🇸 Phoenix 3
+      - US 🇺🇸 Phoenix 4
+      - US 🇺🇸 Atlanta 1
+      - US 🇺🇸 Atlanta 2
+      - US 🇺🇸 Atlanta 3
+      - US 🇺🇸 Atlanta 4
+      - US 🇺🇸 Orlando 1
+      - US 🇺🇸 Orlando 2
+      - US 🇺🇸 Orlando 3
+      - US 🇺🇸 Orlando 4
+      - US 🇺🇸 Las Vegas 1
+      - US 🇺🇸 Las Vegas 2
+      - US 🇺🇸 Las Vegas 3
+      - US 🇺🇸 Las Vegas 4
+      - US 🇺🇸 Los Angeles 1
+      - US 🇺🇸 Los Angeles 2
+      - US 🇺🇸 Los Angeles 3
+      - US 🇺🇸 Los Angeles 4
+      - US 🇺🇸 San Francisco 1
+      - US 🇺🇸 San Francisco 2
+      - US 🇺🇸 San Francisco 3
+      - US 🇺🇸 San Francisco 4
+      - US 🇺🇸 Ashburn 1
+      - US 🇺🇸 Ashburn 2
+      - US 🇺🇸 Ashburn 3
+      - US 🇺🇸 Ashburn 4
+      - US 🇺🇸 Houston 1
+      - US 🇺🇸 Houston 2
+      - US 🇺🇸 Houston 3
+      - US 🇺🇸 Houston 4
+      - US 🇺🇸 San Jose 1
+      - US 🇺🇸 San Jose 2
+      - US 🇺🇸 San Jose 3
+      - US 🇺🇸 San Jose 4
+      - BA 🇧🇦 Sarajevo
+      - BG 🇧🇬 Sofia
+      - CZ 🇨🇿 Prague
+      - GR 🇬🇷 Athens
+      - HU 🇭🇺 Budapest
+      - IS 🇮🇸 Reykjavik
+      - MD 🇲🇩 Chisinau
+      - MK 🇲🇰 Skopje
+      - UA 🇺🇦 Kyiv
+      - AR 🇦🇷 Buenos Aires
+      - BR 🇧🇷 Sao Paulo
+      - CA 🇨🇦 Montreal
+      - CA 🇨🇦 Toronto
+      - CA 🇨🇦 Vancouver
+      - CO 🇨🇴 Bogota
+      - CR 🇨🇷 San Jose
+      - MT 🇲🇹 Valletta
+      - MX 🇲🇽 Mexico City
+      - AU 🇦🇺 Perth
+      - AU 🇦🇺 Adelaide
+      - AU 🇦🇺 Brisbane
+      - AU 🇦🇺 Melbourne
+      - AU 🇦🇺 Sydney
+      - HK 🇭🇰 Hong Kong
+      - IN 🇮🇳 Indore
+      - IN 🇮🇳 Mumbai
+      - IN 🇮🇳 Chennai
+      - ID 🇮🇩 Jakarta
+      - JP 🇯🇵 Tokyo
+      - KZ 🇰🇿 Oral
+      - My 🇲🇾 Kuala Lumpur
+      - Nz 🇳🇿 Auckland
+      - PH 🇵🇭 Manila
+      - SG 🇸🇬 Singapore
+      - KR 🇰🇷 Seoul
+      - TW 🇹🇼 Taichung City
+      - TH 🇹🇭 Bangkok
+      - IL 🇮🇱 Tel Aviv
+      - NG 🇳🇬 Lagos
+      - ZA 🇿🇦 Johannesburg
+      - AE 🇦🇪 Dubai  
+      - PA 🇵🇦 Panama
+      - PE 🇵🇪 Lima
+      - VE 🇻🇪 Caracas
+      - GE 🇬🇪 Tbilisi
+
+
+  - name: ✅ Direct
+    type: select
+    proxies:
+      - DIRECT
+
+  - name: 🚫 Intercept
+    type: select
+    proxies:
+      - REJECT
+      - DIRECT
+
+rules:
+
+  - DOMAIN-SUFFIX,ad.com,🚫 Intercept
+  - SRC-IP-CIDR,192.168.1.201/32,✅ Direct
+  - IP-CIDR,127.0.0.0/8,✅ Direct
+  - MATCH,,🔰 Select,dns-failed
