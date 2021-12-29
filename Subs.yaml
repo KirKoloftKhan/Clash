@@ -1,0 +1,615 @@
+
+mixed-port: 7890
+allow-lan: false
+mode: Global
+log-level: silent
+external-controller: 127.0.0.1:9090
+dns:
+  enable: true
+  enhanced-mode: redir-host
+  fake-ip-range: 198.18.0.1/16
+  nameserver:
+    - 94.140.14.14
+    - 94.140.15.15
+tun:
+  enable: true
+  stack: gvisor
+  dns-hijack:
+    - 198.18.0.2:53
+  auto-route: true
+  auto-detect-interface: true
+
+  fallback:
+    - 94.140.14.14
+    - 94.140.14.15
+proxies:
+  - {name: 'GB+🇬🇧+London-PF_1', server: 77.243.177.78, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: Qu9b6jbYLF5Dtha3n7W2}
+  - {name: 'GB+🇬🇧+Manchester_2', server: 86.106.136.98, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: h6WG7sxsLTBGn7uyvMG8}
+  - {name: 'LU+🇱🇺+Luxembourg_3', server: 5.253.204.194, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: qLzS7DF9qRYxJTHfckhC}
+  - {name: 'ES+🇪🇸+Madrid_4', server: 45.152.183.242, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: r4MP5DzDNmAqbBHzbSXw}
+  - {name: 'IT+🇮🇹+Milan_5', server: 217.138.197.138, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: dsHq7JmRFhSkvxzCuMFy}
+  - {name: 'NO+🇳🇴+Oslo_6', server: 84.247.50.10, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: AsLgDbA45KTMXumtzWhf}
+  - {name: 'FR+🇫🇷+Paris_7', server: 37.120.136.234, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: Xd2xnHT8tYkVt5BDk92b}
+  - {name: 'CH+🇨🇭+Zurich_8', server: 37.120.137.82, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: EGTHtnGhcnggx5yBYSqS}
+  - {name: 'NZ+🇳🇿+Auckland_9', server: 103.108.94.226, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: bFfLrvbG3GjjNSxKBWt5}
+  - {name: 'VN+🇻🇳+Hanoi_10', server: 188.214.152.194, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: t8BFcaM3GSCw5FHbph27}
+  - {name: 'HK+🇭🇰+Hong+Kong_11', server: 84.17.37.55, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: tjwRqQvteAjt3xFmbZTA}
+  - {name: 'ID+🇮🇩+Jakarta_12', server: 45.133.181.58, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: qzj5NqakK4YvYYU87eFF}
+  - {name: 'PH+🇵🇭+Manila_13', server: 188.214.125.106, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: Zq4srheW4eeqMfGeWMTG}
+  - {name: 'AU+🇦🇺+Melbourne_14', server: 116.206.230.130, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: zaNeDgu9mZKpEMTHQJy8}
+  - {name: 'AU+🇦🇺+Sydney_15', server: 46.102.153.106, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: dsHq7JmRFhSkvxzCuMFy}
+  - {name: 'RU+🇷🇺+Moscow_16', server: 80.93.181.194, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: BjnLULGTNTBUCvuSaW8f}
+  - {name: 'RU+🇷🇺+St+Petersburg_17', server: 82.202.220.242, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: Kw6hMXQ2Z7ey7mf2Uqyr}
+  - {name: 'KR+🇰🇷+Seoul_18', server: 169.56.83.206, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: V9eSCwLbC8xS97e3Brm3}
+  - {name: 'My+🇲🇾+Sibu_19', server: 223.25.246.4, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: w4GUD28Bw9uCMdbc2pqA}
+  - {name: 'SG+🇸🇬+Singapore_20', server: 84.17.38.144, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: gTYdduTTEBBdVZ4LcBnT}
+  - {name: 'TW+🇹🇼+Taipei_21', server: 188.214.106.98, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: cNbqVVyUfbJFZ6S8EgRH}
+  - {name: 'JP+🇯🇵+Tokyo_22', server: 84.17.34.8, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: FuynHKjkzhBnmcLpaLKm}
+  - {name: 'EG+🇪🇬+Cairo_23', server: 188.214.122.138, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: QhtEqbEtn74KsTUM4MUg}
+  - {name: 'IN+🇮🇳+Chennai_24', server: 169.38.107.52, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: 7D4GYNDaFy4eebe47tvF}
+  - {name: 'TR+🇹🇷+Denizli_25', server: 95.173.161.240, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: fmxeGazCbFkCtsBFhRZc}
+  - {name: 'AE+🇦🇪+Dubai_26', server: 217.138.193.42, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: kGm85U8ewgPXbKr5LGxc}
+  - {name: 'ZA+🇿🇦+Johannesburg_27', server: 102.165.20.38, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: VLGVpK9npKaFqBLHcnu9}
+  - {name: 'NG+🇳🇬+Lagos_28', server: 102.129.144.142, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: QzTsOpqsdj29bWqIqWR6}
+  - {name: 'IL+🇮🇱+Tel+Aviv_29', server: 212.199.61.55, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: scDj68fv6xkMg2np9RgW}
+  - {name: 'CA+🇨🇦+Toronto_30', server: 184.75.208.234, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: 47GH3wQRw7V4Zhd35bFs}
+  - {name: 'CA+🇨🇦+Montreal_31', server: 217.138.200.242, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: EGTHtnGhcnggx5yBYSqS}
+  - {name: 'US+🇺🇸+Chicago_32', server: 69.39.239.57, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: 2jQLXYq5xgrE3gKXmfjB}
+  - {name: 'US+🇺🇸+Washington+DC_33', server: 70.32.0.208, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: q4apPAjyY9knqKS4e9xZ}
+  - {name: 'US+🇺🇸+New+York_34', server: 217.138.206.98, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: kGm85U8ewgPXbKr5LGxc}
+  - {name: 'US+🇺🇸+New+Jersey_35', server: 23.226.131.146, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: ckX2YfENbjCtVzVJphFP}
+  - {name: 'US+🇺🇸+New+York-PF_36', server: 188.241.179.2, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: 2SKtWLpv3tWyS97wqrxC}
+  - {name: 'US+🇺🇸+Denver_37', server: 70.39.71.2, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: XkH8z99cQguQ8ywK5jhV}
+  - {name: 'US+🇺🇸+Atlanta_38', server: 104.223.91.146, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: QKyLzp5JUG6XEGy2wbEE}
+  - {name: 'CZ+🇨🇿+Prague_39', server: 217.138.199.138, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: S4w7wHjBRxCVkxZLgTaN}
+  - {name: 'US+🇺🇸+Miami_40', server: 96.47.224.2, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: YDNYJcNdH5xuLrhyr7Fj}
+  - {name: 'US+🇺🇸+Seattle_41', server: 104.140.21.178, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: 4kUSnsELPgwDFqkrnPqL}
+  - {name: 'US+🇺🇸+Salt+Lake+City_42', server: 107.182.234.233, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: XkH8z99cQguQ8ywK5jhV}
+  - {name: 'CA+🇨🇦+Vancouver_43', server: 71.19.249.109, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: QBLw4rLXQ6ebxpWwSKDL}
+  - {name: 'US+🇺🇸+Dallas_44', server: 194.110.112.74, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: 4W2SJmdKUMJjjkVfRDdh}
+  - {name: 'US+🇺🇸+San+Jose_45', server: 169.62.109.140, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: 74cf7gsXJgd9Z4MAW42L}
+  - {name: 'US+🇺🇸+Los+Angeles_46', server: 66.55.92.101, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: NK4wZejCzDfPdWXTK4FW}
+  - {name: 'US+🇺🇸+Los+Angeles-PF_47', server: 66.55.92.75, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: 6g8n89NARNcuTH2XvUtZ}
+  - {name: 'MX+🇲🇽+Mexico+City_48', server: 169.57.35.85, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: 3Q5yYEGGMu8jU2p25aWL}
+  - {name: 'GB+🇬🇧+London_49', server: 45.141.154.234, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: sHWJUzzQUXtQSR2P6HNJ}
+  - {name: 'NL+🇳🇱+Amsterdam_50', server: 89.238.177.234, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: VPPqaR4qpLmNw37jaJg6}
+  - {name: 'DE+🇩🇪+Frankfurt_51', server: 45.141.152.178, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: FTvsfXCvXLPFEMKNSADr}
+  - {name: 'BE+🇧🇪+Brussels_52', server: 77.243.191.178, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: 47GH3wQRw7V4Zhd35bFs}
+  - {name: 'PT+🇵🇹+Lisbon_53', server: 185.90.57.152, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: qSnstpCypymLvPeyLRqf}
+  - {name: 'FI+🇫🇮+Helsinki_54', server: 185.212.149.152, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: SxFvGWWUtEjyQnGbggq2}
+  - {name: 'IE+🇮🇪+Dublin_55', server: 217.138.222.138, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: AsLgDbA45KTMXumtzWhf}
+  - {name: 'PL+🇵🇱+Warsaw_56', server: 217.138.209.122, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: CxgRTZRE5urVfbbnGSyr}
+  - {name: 'DK+🇩🇰+Copenhagen_57', server: 37.120.194.82, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: 2V7N5kGUghaLxF4aUqTw}
+  - {name: 'AT+🇦🇹+Vienna_58', server: 37.120.212.162, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: 2XtmwMEgsVJYKWF4VjkL}
+  - {name: 'FI+🇫🇮+Oulu_59', server: 188.126.89.174, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: SkGJxCjsuc8DJsB2GtM4}
+  - {name: 'SE+🇸🇪+Stockholm_60', server: 45.83.91.66, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: fAmKHf3Dft78ZyzL9kYF}
+  - {name: 'RS+🇷🇸+Belgrade_61', server: 37.120.193.170, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: Z3WEYrWQdmDZnLvJ94vE}
+  - {name: 'BG+🇧🇬+Sofia_62', server: 217.138.221.42, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: r4MP5DzDNmAqbBHzbSXw}
+  - {name: 'UA+🇺🇦+Kyiv_63', server: 37.19.218.197, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: Mx6DztQqZb7j34FdWjER}
+  - {name: 'GR+🇬🇷+Athens_64', server: 185.51.134.210, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: mTrN2fMYeWJwrkWpTnL2}
+  - {name: 'RO+🇷🇴+Bucharest_65', server: 86.105.25.162, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: gKDDFZyBmBH5Ru46xBAK}
+  - {name: 'BR+🇧🇷+Sao+Paulo_66', server: 177.54.152.89, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: 2GWsqE7Gr3nRMuuQZfFa}
+  - {name: 'HU+🇭🇺+Budapest_67', server: 185.128.26.130, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: GU3kqh2ZSkzFkRBp4hxy}
+  - {name: 'AR+🇦🇷+Buenos+Aires_68', server: 131.255.4.140, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: UHu5NzfXjuur52h9}
+  - {name: 'US+🇺🇸+Phoenix_69', server: 170.130.15.34, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: q8gsJVLZ5eYXU3uhmnbH}
+proxy-groups:
+  - name: 🔰 节点选择
+    type: select
+    proxies:
+      - ♻️ 自动选择
+      - 🎯 全球直连
+      - GB+🇬🇧+London-PF_1
+      - GB+🇬🇧+Manchester_2
+      - LU+🇱🇺+Luxembourg_3
+      - ES+🇪🇸+Madrid_4
+      - IT+🇮🇹+Milan_5
+      - NO+🇳🇴+Oslo_6
+      - FR+🇫🇷+Paris_7
+      - CH+🇨🇭+Zurich_8
+      - NZ+🇳🇿+Auckland_9
+      - VN+🇻🇳+Hanoi_10
+      - HK+🇭🇰+Hong+Kong_11
+      - ID+🇮🇩+Jakarta_12
+      - PH+🇵🇭+Manila_13
+      - AU+🇦🇺+Melbourne_14
+      - AU+🇦🇺+Sydney_15
+      - RU+🇷🇺+Moscow_16
+      - RU+🇷🇺+St+Petersburg_17
+      - KR+🇰🇷+Seoul_18
+      - My+🇲🇾+Sibu_19
+      - SG+🇸🇬+Singapore_20
+      - TW+🇹🇼+Taipei_21
+      - JP+🇯🇵+Tokyo_22
+      - EG+🇪🇬+Cairo_23
+      - IN+🇮🇳+Chennai_24
+      - TR+🇹🇷+Denizli_25
+      - AE+🇦🇪+Dubai_26
+      - ZA+🇿🇦+Johannesburg_27
+      - NG+🇳🇬+Lagos_28
+      - IL+🇮🇱+Tel+Aviv_29
+      - CA+🇨🇦+Toronto_30
+      - CA+🇨🇦+Montreal_31
+      - US+🇺🇸+Chicago_32
+      - US+🇺🇸+Washington+DC_33
+      - US+🇺🇸+New+York_34
+      - US+🇺🇸+New+Jersey_35
+      - US+🇺🇸+New+York-PF_36
+      - US+🇺🇸+Denver_37
+      - US+🇺🇸+Atlanta_38
+      - CZ+🇨🇿+Prague_39
+      - US+🇺🇸+Miami_40
+      - US+🇺🇸+Seattle_41
+      - US+🇺🇸+Salt+Lake+City_42
+      - CA+🇨🇦+Vancouver_43
+      - US+🇺🇸+Dallas_44
+      - US+🇺🇸+San+Jose_45
+      - US+🇺🇸+Los+Angeles_46
+      - US+🇺🇸+Los+Angeles-PF_47
+      - MX+🇲🇽+Mexico+City_48
+      - GB+🇬🇧+London_49
+      - NL+🇳🇱+Amsterdam_50
+      - DE+🇩🇪+Frankfurt_51
+      - BE+🇧🇪+Brussels_52
+      - PT+🇵🇹+Lisbon_53
+      - FI+🇫🇮+Helsinki_54
+      - IE+🇮🇪+Dublin_55
+      - PL+🇵🇱+Warsaw_56
+      - DK+🇩🇰+Copenhagen_57
+      - AT+🇦🇹+Vienna_58
+      - FI+🇫🇮+Oulu_59
+      - SE+🇸🇪+Stockholm_60
+      - RS+🇷🇸+Belgrade_61
+      - BG+🇧🇬+Sofia_62
+      - UA+🇺🇦+Kyiv_63
+      - GR+🇬🇷+Athens_64
+      - RO+🇷🇴+Bucharest_65
+      - BR+🇧🇷+Sao+Paulo_66
+      - HU+🇭🇺+Budapest_67
+      - AR+🇦🇷+Buenos+Aires_68
+      - US+🇺🇸+Phoenix_69
+  - name: ♻️ 自动选择
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    proxies:
+      - GB+🇬🇧+London-PF_1
+      - GB+🇬🇧+Manchester_2
+      - LU+🇱🇺+Luxembourg_3
+      - ES+🇪🇸+Madrid_4
+      - IT+🇮🇹+Milan_5
+      - NO+🇳🇴+Oslo_6
+      - FR+🇫🇷+Paris_7
+      - CH+🇨🇭+Zurich_8
+      - NZ+🇳🇿+Auckland_9
+      - VN+🇻🇳+Hanoi_10
+      - HK+🇭🇰+Hong+Kong_11
+      - ID+🇮🇩+Jakarta_12
+      - PH+🇵🇭+Manila_13
+      - AU+🇦🇺+Melbourne_14
+      - AU+🇦🇺+Sydney_15
+      - RU+🇷🇺+Moscow_16
+      - RU+🇷🇺+St+Petersburg_17
+      - KR+🇰🇷+Seoul_18
+      - My+🇲🇾+Sibu_19
+      - SG+🇸🇬+Singapore_20
+      - TW+🇹🇼+Taipei_21
+      - JP+🇯🇵+Tokyo_22
+      - EG+🇪🇬+Cairo_23
+      - IN+🇮🇳+Chennai_24
+      - TR+🇹🇷+Denizli_25
+      - AE+🇦🇪+Dubai_26
+      - ZA+🇿🇦+Johannesburg_27
+      - NG+🇳🇬+Lagos_28
+      - IL+🇮🇱+Tel+Aviv_29
+      - CA+🇨🇦+Toronto_30
+      - CA+🇨🇦+Montreal_31
+      - US+🇺🇸+Chicago_32
+      - US+🇺🇸+Washington+DC_33
+      - US+🇺🇸+New+York_34
+      - US+🇺🇸+New+Jersey_35
+      - US+🇺🇸+New+York-PF_36
+      - US+🇺🇸+Denver_37
+      - US+🇺🇸+Atlanta_38
+      - CZ+🇨🇿+Prague_39
+      - US+🇺🇸+Miami_40
+      - US+🇺🇸+Seattle_41
+      - US+🇺🇸+Salt+Lake+City_42
+      - CA+🇨🇦+Vancouver_43
+      - US+🇺🇸+Dallas_44
+      - US+🇺🇸+San+Jose_45
+      - US+🇺🇸+Los+Angeles_46
+      - US+🇺🇸+Los+Angeles-PF_47
+      - MX+🇲🇽+Mexico+City_48
+      - GB+🇬🇧+London_49
+      - NL+🇳🇱+Amsterdam_50
+      - DE+🇩🇪+Frankfurt_51
+      - BE+🇧🇪+Brussels_52
+      - PT+🇵🇹+Lisbon_53
+      - FI+🇫🇮+Helsinki_54
+      - IE+🇮🇪+Dublin_55
+      - PL+🇵🇱+Warsaw_56
+      - DK+🇩🇰+Copenhagen_57
+      - AT+🇦🇹+Vienna_58
+      - FI+🇫🇮+Oulu_59
+      - SE+🇸🇪+Stockholm_60
+      - RS+🇷🇸+Belgrade_61
+      - BG+🇧🇬+Sofia_62
+      - UA+🇺🇦+Kyiv_63
+      - GR+🇬🇷+Athens_64
+      - RO+🇷🇴+Bucharest_65
+      - BR+🇧🇷+Sao+Paulo_66
+      - HU+🇭🇺+Budapest_67
+      - AR+🇦🇷+Buenos+Aires_68
+      - US+🇺🇸+Phoenix_69
+  - name: 🌍 国外媒体
+    type: select
+    proxies:
+      - 🔰 节点选择
+      - ♻️ 自动选择
+      - 🎯 全球直连
+      - GB+🇬🇧+London-PF_1
+      - GB+🇬🇧+Manchester_2
+      - LU+🇱🇺+Luxembourg_3
+      - ES+🇪🇸+Madrid_4
+      - IT+🇮🇹+Milan_5
+      - NO+🇳🇴+Oslo_6
+      - FR+🇫🇷+Paris_7
+      - CH+🇨🇭+Zurich_8
+      - NZ+🇳🇿+Auckland_9
+      - VN+🇻🇳+Hanoi_10
+      - HK+🇭🇰+Hong+Kong_11
+      - ID+🇮🇩+Jakarta_12
+      - PH+🇵🇭+Manila_13
+      - AU+🇦🇺+Melbourne_14
+      - AU+🇦🇺+Sydney_15
+      - RU+🇷🇺+Moscow_16
+      - RU+🇷🇺+St+Petersburg_17
+      - KR+🇰🇷+Seoul_18
+      - My+🇲🇾+Sibu_19
+      - SG+🇸🇬+Singapore_20
+      - TW+🇹🇼+Taipei_21
+      - JP+🇯🇵+Tokyo_22
+      - EG+🇪🇬+Cairo_23
+      - IN+🇮🇳+Chennai_24
+      - TR+🇹🇷+Denizli_25
+      - AE+🇦🇪+Dubai_26
+      - ZA+🇿🇦+Johannesburg_27
+      - NG+🇳🇬+Lagos_28
+      - IL+🇮🇱+Tel+Aviv_29
+      - CA+🇨🇦+Toronto_30
+      - CA+🇨🇦+Montreal_31
+      - US+🇺🇸+Chicago_32
+      - US+🇺🇸+Washington+DC_33
+      - US+🇺🇸+New+York_34
+      - US+🇺🇸+New+Jersey_35
+      - US+🇺🇸+New+York-PF_36
+      - US+🇺🇸+Denver_37
+      - US+🇺🇸+Atlanta_38
+      - CZ+🇨🇿+Prague_39
+      - US+🇺🇸+Miami_40
+      - US+🇺🇸+Seattle_41
+      - US+🇺🇸+Salt+Lake+City_42
+      - CA+🇨🇦+Vancouver_43
+      - US+🇺🇸+Dallas_44
+      - US+🇺🇸+San+Jose_45
+      - US+🇺🇸+Los+Angeles_46
+      - US+🇺🇸+Los+Angeles-PF_47
+      - MX+🇲🇽+Mexico+City_48
+      - GB+🇬🇧+London_49
+      - NL+🇳🇱+Amsterdam_50
+      - DE+🇩🇪+Frankfurt_51
+      - BE+🇧🇪+Brussels_52
+      - PT+🇵🇹+Lisbon_53
+      - FI+🇫🇮+Helsinki_54
+      - IE+🇮🇪+Dublin_55
+      - PL+🇵🇱+Warsaw_56
+      - DK+🇩🇰+Copenhagen_57
+      - AT+🇦🇹+Vienna_58
+      - FI+🇫🇮+Oulu_59
+      - SE+🇸🇪+Stockholm_60
+      - RS+🇷🇸+Belgrade_61
+      - BG+🇧🇬+Sofia_62
+      - UA+🇺🇦+Kyiv_63
+      - GR+🇬🇷+Athens_64
+      - RO+🇷🇴+Bucharest_65
+      - BR+🇧🇷+Sao+Paulo_66
+      - HU+🇭🇺+Budapest_67
+      - AR+🇦🇷+Buenos+Aires_68
+      - US+🇺🇸+Phoenix_69
+  - name: 🌏 国内媒体
+    type: select
+    proxies:
+      - 🎯 全球直连
+      - 🔰 节点选择
+      - GB+🇬🇧+London-PF_1
+      - GB+🇬🇧+Manchester_2
+      - LU+🇱🇺+Luxembourg_3
+      - ES+🇪🇸+Madrid_4
+      - IT+🇮🇹+Milan_5
+      - NO+🇳🇴+Oslo_6
+      - FR+🇫🇷+Paris_7
+      - CH+🇨🇭+Zurich_8
+      - NZ+🇳🇿+Auckland_9
+      - VN+🇻🇳+Hanoi_10
+      - HK+🇭🇰+Hong+Kong_11
+      - ID+🇮🇩+Jakarta_12
+      - PH+🇵🇭+Manila_13
+      - AU+🇦🇺+Melbourne_14
+      - AU+🇦🇺+Sydney_15
+      - RU+🇷🇺+Moscow_16
+      - RU+🇷🇺+St+Petersburg_17
+      - KR+🇰🇷+Seoul_18
+      - My+🇲🇾+Sibu_19
+      - SG+🇸🇬+Singapore_20
+      - TW+🇹🇼+Taipei_21
+      - JP+🇯🇵+Tokyo_22
+      - EG+🇪🇬+Cairo_23
+      - IN+🇮🇳+Chennai_24
+      - TR+🇹🇷+Denizli_25
+      - AE+🇦🇪+Dubai_26
+      - ZA+🇿🇦+Johannesburg_27
+      - NG+🇳🇬+Lagos_28
+      - IL+🇮🇱+Tel+Aviv_29
+      - CA+🇨🇦+Toronto_30
+      - CA+🇨🇦+Montreal_31
+      - US+🇺🇸+Chicago_32
+      - US+🇺🇸+Washington+DC_33
+      - US+🇺🇸+New+York_34
+      - US+🇺🇸+New+Jersey_35
+      - US+🇺🇸+New+York-PF_36
+      - US+🇺🇸+Denver_37
+      - US+🇺🇸+Atlanta_38
+      - CZ+🇨🇿+Prague_39
+      - US+🇺🇸+Miami_40
+      - US+🇺🇸+Seattle_41
+      - US+🇺🇸+Salt+Lake+City_42
+      - CA+🇨🇦+Vancouver_43
+      - US+🇺🇸+Dallas_44
+      - US+🇺🇸+San+Jose_45
+      - US+🇺🇸+Los+Angeles_46
+      - US+🇺🇸+Los+Angeles-PF_47
+      - MX+🇲🇽+Mexico+City_48
+      - GB+🇬🇧+London_49
+      - NL+🇳🇱+Amsterdam_50
+      - DE+🇩🇪+Frankfurt_51
+      - BE+🇧🇪+Brussels_52
+      - PT+🇵🇹+Lisbon_53
+      - FI+🇫🇮+Helsinki_54
+      - IE+🇮🇪+Dublin_55
+      - PL+🇵🇱+Warsaw_56
+      - DK+🇩🇰+Copenhagen_57
+      - AT+🇦🇹+Vienna_58
+      - FI+🇫🇮+Oulu_59
+      - SE+🇸🇪+Stockholm_60
+      - RS+🇷🇸+Belgrade_61
+      - BG+🇧🇬+Sofia_62
+      - UA+🇺🇦+Kyiv_63
+      - GR+🇬🇷+Athens_64
+      - RO+🇷🇴+Bucharest_65
+      - BR+🇧🇷+Sao+Paulo_66
+      - HU+🇭🇺+Budapest_67
+      - AR+🇦🇷+Buenos+Aires_68
+      - US+🇺🇸+Phoenix_69
+  - name: Ⓜ️ 微软服务
+    type: select
+    proxies:
+      - 🎯 全球直连
+      - 🔰 节点选择
+      - GB+🇬🇧+London-PF_1
+      - GB+🇬🇧+Manchester_2
+      - LU+🇱🇺+Luxembourg_3
+      - ES+🇪🇸+Madrid_4
+      - IT+🇮🇹+Milan_5
+      - NO+🇳🇴+Oslo_6
+      - FR+🇫🇷+Paris_7
+      - CH+🇨🇭+Zurich_8
+      - NZ+🇳🇿+Auckland_9
+      - VN+🇻🇳+Hanoi_10
+      - HK+🇭🇰+Hong+Kong_11
+      - ID+🇮🇩+Jakarta_12
+      - PH+🇵🇭+Manila_13
+      - AU+🇦🇺+Melbourne_14
+      - AU+🇦🇺+Sydney_15
+      - RU+🇷🇺+Moscow_16
+      - RU+🇷🇺+St+Petersburg_17
+      - KR+🇰🇷+Seoul_18
+      - My+🇲🇾+Sibu_19
+      - SG+🇸🇬+Singapore_20
+      - TW+🇹🇼+Taipei_21
+      - JP+🇯🇵+Tokyo_22
+      - EG+🇪🇬+Cairo_23
+      - IN+🇮🇳+Chennai_24
+      - TR+🇹🇷+Denizli_25
+      - AE+🇦🇪+Dubai_26
+      - ZA+🇿🇦+Johannesburg_27
+      - NG+🇳🇬+Lagos_28
+      - IL+🇮🇱+Tel+Aviv_29
+      - CA+🇨🇦+Toronto_30
+      - CA+🇨🇦+Montreal_31
+      - US+🇺🇸+Chicago_32
+      - US+🇺🇸+Washington+DC_33
+      - US+🇺🇸+New+York_34
+      - US+🇺🇸+New+Jersey_35
+      - US+🇺🇸+New+York-PF_36
+      - US+🇺🇸+Denver_37
+      - US+🇺🇸+Atlanta_38
+      - CZ+🇨🇿+Prague_39
+      - US+🇺🇸+Miami_40
+      - US+🇺🇸+Seattle_41
+      - US+🇺🇸+Salt+Lake+City_42
+      - CA+🇨🇦+Vancouver_43
+      - US+🇺🇸+Dallas_44
+      - US+🇺🇸+San+Jose_45
+      - US+🇺🇸+Los+Angeles_46
+      - US+🇺🇸+Los+Angeles-PF_47
+      - MX+🇲🇽+Mexico+City_48
+      - GB+🇬🇧+London_49
+      - NL+🇳🇱+Amsterdam_50
+      - DE+🇩🇪+Frankfurt_51
+      - BE+🇧🇪+Brussels_52
+      - PT+🇵🇹+Lisbon_53
+      - FI+🇫🇮+Helsinki_54
+      - IE+🇮🇪+Dublin_55
+      - PL+🇵🇱+Warsaw_56
+      - DK+🇩🇰+Copenhagen_57
+      - AT+🇦🇹+Vienna_58
+      - FI+🇫🇮+Oulu_59
+      - SE+🇸🇪+Stockholm_60
+      - RS+🇷🇸+Belgrade_61
+      - BG+🇧🇬+Sofia_62
+      - UA+🇺🇦+Kyiv_63
+      - GR+🇬🇷+Athens_64
+      - RO+🇷🇴+Bucharest_65
+      - BR+🇧🇷+Sao+Paulo_66
+      - HU+🇭🇺+Budapest_67
+      - AR+🇦🇷+Buenos+Aires_68
+      - US+🇺🇸+Phoenix_69
+  - name: 📲 电报信息
+    type: select
+    proxies:
+      - 🔰 节点选择
+      - 🎯 全球直连
+      - GB+🇬🇧+London-PF_1
+      - GB+🇬🇧+Manchester_2
+      - LU+🇱🇺+Luxembourg_3
+      - ES+🇪🇸+Madrid_4
+      - IT+🇮🇹+Milan_5
+      - NO+🇳🇴+Oslo_6
+      - FR+🇫🇷+Paris_7
+      - CH+🇨🇭+Zurich_8
+      - NZ+🇳🇿+Auckland_9
+      - VN+🇻🇳+Hanoi_10
+      - HK+🇭🇰+Hong+Kong_11
+      - ID+🇮🇩+Jakarta_12
+      - PH+🇵🇭+Manila_13
+      - AU+🇦🇺+Melbourne_14
+      - AU+🇦🇺+Sydney_15
+      - RU+🇷🇺+Moscow_16
+      - RU+🇷🇺+St+Petersburg_17
+      - KR+🇰🇷+Seoul_18
+      - My+🇲🇾+Sibu_19
+      - SG+🇸🇬+Singapore_20
+      - TW+🇹🇼+Taipei_21
+      - JP+🇯🇵+Tokyo_22
+      - EG+🇪🇬+Cairo_23
+      - IN+🇮🇳+Chennai_24
+      - TR+🇹🇷+Denizli_25
+      - AE+🇦🇪+Dubai_26
+      - ZA+🇿🇦+Johannesburg_27
+      - NG+🇳🇬+Lagos_28
+      - IL+🇮🇱+Tel+Aviv_29
+      - CA+🇨🇦+Toronto_30
+      - CA+🇨🇦+Montreal_31
+      - US+🇺🇸+Chicago_32
+      - US+🇺🇸+Washington+DC_33
+      - US+🇺🇸+New+York_34
+      - US+🇺🇸+New+Jersey_35
+      - US+🇺🇸+New+York-PF_36
+      - US+🇺🇸+Denver_37
+      - US+🇺🇸+Atlanta_38
+      - CZ+🇨🇿+Prague_39
+      - US+🇺🇸+Miami_40
+      - US+🇺🇸+Seattle_41
+      - US+🇺🇸+Salt+Lake+City_42
+      - CA+🇨🇦+Vancouver_43
+      - US+🇺🇸+Dallas_44
+      - US+🇺🇸+San+Jose_45
+      - US+🇺🇸+Los+Angeles_46
+      - US+🇺🇸+Los+Angeles-PF_47
+      - MX+🇲🇽+Mexico+City_48
+      - GB+🇬🇧+London_49
+      - NL+🇳🇱+Amsterdam_50
+      - DE+🇩🇪+Frankfurt_51
+      - BE+🇧🇪+Brussels_52
+      - PT+🇵🇹+Lisbon_53
+      - FI+🇫🇮+Helsinki_54
+      - IE+🇮🇪+Dublin_55
+      - PL+🇵🇱+Warsaw_56
+      - DK+🇩🇰+Copenhagen_57
+      - AT+🇦🇹+Vienna_58
+      - FI+🇫🇮+Oulu_59
+      - SE+🇸🇪+Stockholm_60
+      - RS+🇷🇸+Belgrade_61
+      - BG+🇧🇬+Sofia_62
+      - UA+🇺🇦+Kyiv_63
+      - GR+🇬🇷+Athens_64
+      - RO+🇷🇴+Bucharest_65
+      - BR+🇧🇷+Sao+Paulo_66
+      - HU+🇭🇺+Budapest_67
+      - AR+🇦🇷+Buenos+Aires_68
+      - US+🇺🇸+Phoenix_69
+  - name: 🍎 苹果服务
+    type: select
+    proxies:
+      - 🔰 节点选择
+      - 🎯 全球直连
+      - ♻️ 自动选择
+      - GB+🇬🇧+London-PF_1
+      - GB+🇬🇧+Manchester_2
+      - LU+🇱🇺+Luxembourg_3
+      - ES+🇪🇸+Madrid_4
+      - IT+🇮🇹+Milan_5
+      - NO+🇳🇴+Oslo_6
+      - FR+🇫🇷+Paris_7
+      - CH+🇨🇭+Zurich_8
+      - NZ+🇳🇿+Auckland_9
+      - VN+🇻🇳+Hanoi_10
+      - HK+🇭🇰+Hong+Kong_11
+      - ID+🇮🇩+Jakarta_12
+      - PH+🇵🇭+Manila_13
+      - AU+🇦🇺+Melbourne_14
+      - AU+🇦🇺+Sydney_15
+      - RU+🇷🇺+Moscow_16
+      - RU+🇷🇺+St+Petersburg_17
+      - KR+🇰🇷+Seoul_18
+      - My+🇲🇾+Sibu_19
+      - SG+🇸🇬+Singapore_20
+      - TW+🇹🇼+Taipei_21
+      - JP+🇯🇵+Tokyo_22
+      - EG+🇪🇬+Cairo_23
+      - IN+🇮🇳+Chennai_24
+      - TR+🇹🇷+Denizli_25
+      - AE+🇦🇪+Dubai_26
+      - ZA+🇿🇦+Johannesburg_27
+      - NG+🇳🇬+Lagos_28
+      - IL+🇮🇱+Tel+Aviv_29
+      - CA+🇨🇦+Toronto_30
+      - CA+🇨🇦+Montreal_31
+      - US+🇺🇸+Chicago_32
+      - US+🇺🇸+Washington+DC_33
+      - US+🇺🇸+New+York_34
+      - US+🇺🇸+New+Jersey_35
+      - US+🇺🇸+New+York-PF_36
+      - US+🇺🇸+Denver_37
+      - US+🇺🇸+Atlanta_38
+      - CZ+🇨🇿+Prague_39
+      - US+🇺🇸+Miami_40
+      - US+🇺🇸+Seattle_41
+      - US+🇺🇸+Salt+Lake+City_42
+      - CA+🇨🇦+Vancouver_43
+      - US+🇺🇸+Dallas_44
+      - US+🇺🇸+San+Jose_45
+      - US+🇺🇸+Los+Angeles_46
+      - US+🇺🇸+Los+Angeles-PF_47
+      - MX+🇲🇽+Mexico+City_48
+      - GB+🇬🇧+London_49
+      - NL+🇳🇱+Amsterdam_50
+      - DE+🇩🇪+Frankfurt_51
+      - BE+🇧🇪+Brussels_52
+      - PT+🇵🇹+Lisbon_53
+      - FI+🇫🇮+Helsinki_54
+      - IE+🇮🇪+Dublin_55
+      - PL+🇵🇱+Warsaw_56
+      - DK+🇩🇰+Copenhagen_57
+      - AT+🇦🇹+Vienna_58
+      - FI+🇫🇮+Oulu_59
+      - SE+🇸🇪+Stockholm_60
+      - RS+🇷🇸+Belgrade_61
+      - BG+🇧🇬+Sofia_62
+      - UA+🇺🇦+Kyiv_63
+      - GR+🇬🇷+Athens_64
+      - RO+🇷🇴+Bucharest_65
+      - BR+🇧🇷+Sao+Paulo_66
+      - HU+🇭🇺+Budapest_67
+      - AR+🇦🇷+Buenos+Aires_68
+      - US+🇺🇸+Phoenix_69
