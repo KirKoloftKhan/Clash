@@ -15,6 +15,65 @@ proxies:
   - {name: 'WeVPN+CH+🇨🇭+Zurich_8', server: 37.120.137.82, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: EGTHtnGhcnggx5yBYSqS}
   - {name: 'WeVPN+NZ+🇳🇿+Auckland_9', server: 103.108.94.226, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: bFfLrvbG3GjjNSxKBWt5}
   - {name: 'WeVPN+VN+🇻🇳+Hanoi_10', server: 188.214.152.194, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: t8BFcaM3GSCw5FHbph27}
+  - {name: 'WeVPN+HK+🇭🇰+Hong+Kong_11', server: 84.17.37.55, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: tjwRqQvteAjt3xFmbZTA}
+  - {name: 'WeVPN+ID+🇮🇩+Jakarta_12', server: 45.133.181.58, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: qzj5NqakK4YvYYU87eFF}
+  - {name: 'WeVPN+PH+🇵🇭+Manila_13', server: 188.214.125.106, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: Zq4srheW4eeqMfGeWMTG}
+  - {name: 'WeVPN+AU+🇦🇺+Melbourne_14', server: 116.206.230.130, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: zaNeDgu9mZKpEMTHQJy8}
+  - {name: 'WeVPN+AU+🇦🇺+Sydney_15', server: 46.102.153.106, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: dsHq7JmRFhSkvxzCuMFy}
+  - {name: 'WeVPN+RU+🇷🇺+Moscow_16', server: 80.93.181.194, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: BjnLULGTNTBUCvuSaW8f}
+  - {name: 'WeVPN+RU+🇷🇺+St+Petersburg_17', server: 82.202.220.242, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: Kw6hMXQ2Z7ey7mf2Uqyr}
+  - {name: 'WeVPN+KR+🇰🇷+Seoul_18', server: 169.56.83.206, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: V9eSCwLbC8xS97e3Brm3}
+  - {name: 'WeVPN+My+🇲🇾+Sibu_19', server: 223.25.246.4, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: w4GUD28Bw9uCMdbc2pqA}
+  - {name: 'WeVPN+SG+🇸🇬+Singapore_20', server: 84.17.38.144, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: gTYdduTTEBBdVZ4LcBnT}
+  - {name: 'WeVPN+TW+🇹🇼+Taipei_21', server: 188.214.106.98, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: cNbqVVyUfbJFZ6S8EgRH}
+  - {name: 'WeVPN+JP+🇯🇵+Tokyo_22', server: 84.17.34.8, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: FuynHKjkzhBnmcLpaLKm}
+  - {name: 'WeVPN+EG+🇪🇬+Cairo_23', server: 188.214.122.138, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: QhtEqbEtn74KsTUM4MUg}
+  - {name: 'WeVPN+IN+🇮🇳+Chennai_24', server: 169.38.107.52, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: 7D4GYNDaFy4eebe47tvF}
+  - {name: 'WeVPN+TR+🇹🇷+Denizli_25', server: 95.173.161.240, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: fmxeGazCbFkCtsBFhRZc}
+  - {name: 'WeVPN+AE+🇦🇪+Dubai_26', server: 217.138.193.42, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: kGm85U8ewgPXbKr5LGxc}
+  - {name: 'WeVPN+ZA+🇿🇦+Johannesburg_27', server: 102.165.20.38, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: VLGVpK9npKaFqBLHcnu9}
+  - {name: 'WeVPN+NG+🇳🇬+Lagos_28', server: 102.129.144.142, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: QzTsOpqsdj29bWqIqWR6}
+  - {name: 'WeVPN+IL+🇮🇱+Tel+Aviv_29', server: 212.199.61.55, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: scDj68fv6xkMg2np9RgW}
+  - {name: 'WeVPN+CA+🇨🇦+Toronto_30', server: 184.75.208.234, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: 47GH3wQRw7V4Zhd35bFs}
+  - {name: 'WeVPN+CA+🇨🇦+Montreal_31', server: 217.138.200.242, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: EGTHtnGhcnggx5yBYSqS}
+  - {name: 'WeVPN+US+🇺🇸+Chicago_32', server: 69.39.239.57, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: 2jQLXYq5xgrE3gKXmfjB}
+  - {name: 'WeVPN+US+🇺🇸+Washington+DC_33', server: 70.32.0.208, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: q4apPAjyY9knqKS4e9xZ}
+  - {name: 'WeVPN+US+🇺🇸+New+York_34', server: 217.138.206.98, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: kGm85U8ewgPXbKr5LGxc}
+  - {name: 'WeVPN+US+🇺🇸+New+Jersey_35', server: 23.226.131.146, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: ckX2YfENbjCtVzVJphFP}
+  - {name: 'WeVPN+US+🇺🇸+New+York-PF_36', server: 188.241.179.2, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: 2SKtWLpv3tWyS97wqrxC}
+  - {name: 'WeVPN+US+🇺🇸+Denver_37', server: 70.39.71.2, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: XkH8z99cQguQ8ywK5jhV}
+  - {name: 'WeVPN+US+🇺🇸+Atlanta_38', server: 104.223.91.146, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: QKyLzp5JUG6XEGy2wbEE}
+  - {name: 'WeVPN+CZ+🇨🇿+Prague_39', server: 217.138.199.138, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: S4w7wHjBRxCVkxZLgTaN}
+  - {name: 'WeVPN+US+🇺🇸+Miami_40', server: 96.47.224.2, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: YDNYJcNdH5xuLrhyr7Fj}
+  - {name: 'WeVPN+US+🇺🇸+Seattle_41', server: 104.140.21.178, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: 4kUSnsELPgwDFqkrnPqL}
+  - {name: 'WeVPN+US+🇺🇸+Salt+Lake+City_42', server: 107.182.234.233, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: XkH8z99cQguQ8ywK5jhV}
+  - {name: 'WeVPN+CA+🇨🇦+Vancouver_43', server: 71.19.249.109, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: QBLw4rLXQ6ebxpWwSKDL}
+  - {name: 'WeVPN+US+🇺🇸+Dallas_44', server: 194.110.112.74, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: 4W2SJmdKUMJjjkVfRDdh}
+  - {name: 'WeVPN+US+🇺🇸+San+Jose_45', server: 169.62.109.140, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: 74cf7gsXJgd9Z4MAW42L}
+  - {name: 'WeVPN+US+🇺🇸+Los+Angeles_46', server: 66.55.92.101, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: NK4wZejCzDfPdWXTK4FW}
+  - {name: 'WeVPN+US+🇺🇸+Los+Angeles-PF_47', server: 66.55.92.75, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: 6g8n89NARNcuTH2XvUtZ}
+  - {name: 'WeVPN+MX+🇲🇽+Mexico+City_48', server: 169.57.35.85, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: 3Q5yYEGGMu8jU2p25aWL}
+  - {name: 'WeVPN+GB+🇬🇧+London_49', server: 45.141.154.234, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: sHWJUzzQUXtQSR2P6HNJ}
+  - {name: 'WeVPN+NL+🇳🇱+Amsterdam_50', server: 89.238.177.234, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: VPPqaR4qpLmNw37jaJg6}
+  - {name: 'WeVPN+DE+🇩🇪+Frankfurt_51', server: 45.141.152.178, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: FTvsfXCvXLPFEMKNSADr}
+  - {name: 'WeVPN+BE+🇧🇪+Brussels_52', server: 77.243.191.178, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: 47GH3wQRw7V4Zhd35bFs}
+  - {name: 'WeVPN+PT+🇵🇹+Lisbon_53', server: 185.90.57.152, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: qSnstpCypymLvPeyLRqf}
+  - {name: 'WeVPN+FI+🇫🇮+Helsinki_54', server: 185.212.149.152, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: SxFvGWWUtEjyQnGbggq2}
+  - {name: 'WeVPN+IE+🇮🇪+Dublin_55', server: 217.138.222.138, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: AsLgDbA45KTMXumtzWhf}
+  - {name: 'WeVPN+PL+🇵🇱+Warsaw_56', server: 217.138.209.122, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: CxgRTZRE5urVfbbnGSyr}
+  - {name: 'WeVPN+DK+🇩🇰+Copenhagen_57', server: 37.120.194.82, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: 2V7N5kGUghaLxF4aUqTw}
+  - {name: 'WeVPN+AT+🇦🇹+Vienna_58', server: 37.120.212.162, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: 2XtmwMEgsVJYKWF4VjkL}
+  - {name: 'WeVPN+FI+🇫🇮+Oulu_59', server: 188.126.89.174, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: SkGJxCjsuc8DJsB2GtM4}
+  - {name: 'WeVPN+SE+🇸🇪+Stockholm_60', server: 45.83.91.66, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: fAmKHf3Dft78ZyzL9kYF}
+  - {name: 'WeVPN+RS+🇷🇸+Belgrade_61', server: 37.120.193.170, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: Z3WEYrWQdmDZnLvJ94vE}
+  - {name: 'WeVPN+BG+🇧🇬+Sofia_62', server: 217.138.221.42, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: r4MP5DzDNmAqbBHzbSXw}
+  - {name: 'WeVPN+UA+🇺🇦+Kyiv_63', server: 37.19.218.197, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: Mx6DztQqZb7j34FdWjER}
+  - {name: 'WeVPN+GR+🇬🇷+Athens_64', server: 185.51.134.210, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: mTrN2fMYeWJwrkWpTnL2}
+  - {name: 'WeVPN+RO+🇷🇴+Bucharest_65', server: 86.105.25.162, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: gKDDFZyBmBH5Ru46xBAK}
+  - {name: 'WeVPN+BR+🇧🇷+Sao+Paulo_66', server: 177.54.152.89, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: 2GWsqE7Gr3nRMuuQZfFa}
+  - {name: 'WeVPN+HU+🇭🇺+Budapest_67', server: 185.128.26.130, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: GU3kqh2ZSkzFkRBp4hxy}
+  - {name: 'WeVPN+AR+🇦🇷+Buenos+Aires_68', server: 131.255.4.140, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: UHu5NzfXjuur52h9}
+  - {name: 'WeVPN+US+🇺🇸+Phoenix_69', server: 170.130.15.34, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: q8gsJVLZ5eYXU3uhmnbH}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
@@ -31,6 +90,65 @@ proxy-groups:
       - WeVPN+CH+🇨🇭+Zurich_8
       - WeVPN+NZ+🇳🇿+Auckland_9
       - WeVPN+VN+🇻🇳+Hanoi_10
+      - WeVPN+HK+🇭🇰+Hong+Kong_11
+      - WeVPN+ID+🇮🇩+Jakarta_12
+      - WeVPN+PH+🇵🇭+Manila_13
+      - WeVPN+AU+🇦🇺+Melbourne_14
+      - WeVPN+AU+🇦🇺+Sydney_15
+      - WeVPN+RU+🇷🇺+Moscow_16
+      - WeVPN+RU+🇷🇺+St+Petersburg_17
+      - WeVPN+KR+🇰🇷+Seoul_18
+      - WeVPN+My+🇲🇾+Sibu_19
+      - WeVPN+SG+🇸🇬+Singapore_20
+      - WeVPN+TW+🇹🇼+Taipei_21
+      - WeVPN+JP+🇯🇵+Tokyo_22
+      - WeVPN+EG+🇪🇬+Cairo_23
+      - WeVPN+IN+🇮🇳+Chennai_24
+      - WeVPN+TR+🇹🇷+Denizli_25
+      - WeVPN+AE+🇦🇪+Dubai_26
+      - WeVPN+ZA+🇿🇦+Johannesburg_27
+      - WeVPN+NG+🇳🇬+Lagos_28
+      - WeVPN+IL+🇮🇱+Tel+Aviv_29
+      - WeVPN+CA+🇨🇦+Toronto_30
+      - WeVPN+CA+🇨🇦+Montreal_31
+      - WeVPN+US+🇺🇸+Chicago_32
+      - WeVPN+US+🇺🇸+Washington+DC_33
+      - WeVPN+US+🇺🇸+New+York_34
+      - WeVPN+US+🇺🇸+New+Jersey_35
+      - WeVPN+US+🇺🇸+New+York-PF_36
+      - WeVPN+US+🇺🇸+Denver_37
+      - WeVPN+US+🇺🇸+Atlanta_38
+      - WeVPN+CZ+🇨🇿+Prague_39
+      - WeVPN+US+🇺🇸+Miami_40
+      - WeVPN+US+🇺🇸+Seattle_41
+      - WeVPN+US+🇺🇸+Salt+Lake+City_42
+      - WeVPN+CA+🇨🇦+Vancouver_43
+      - WeVPN+US+🇺🇸+Dallas_44
+      - WeVPN+US+🇺🇸+San+Jose_45
+      - WeVPN+US+🇺🇸+Los+Angeles_46
+      - WeVPN+US+🇺🇸+Los+Angeles-PF_47
+      - WeVPN+MX+🇲🇽+Mexico+City_48
+      - WeVPN+GB+🇬🇧+London_49
+      - WeVPN+NL+🇳🇱+Amsterdam_50
+      - WeVPN+DE+🇩🇪+Frankfurt_51
+      - WeVPN+BE+🇧🇪+Brussels_52
+      - WeVPN+PT+🇵🇹+Lisbon_53
+      - WeVPN+FI+🇫🇮+Helsinki_54
+      - WeVPN+IE+🇮🇪+Dublin_55
+      - WeVPN+PL+🇵🇱+Warsaw_56
+      - WeVPN+DK+🇩🇰+Copenhagen_57
+      - WeVPN+AT+🇦🇹+Vienna_58
+      - WeVPN+FI+🇫🇮+Oulu_59
+      - WeVPN+SE+🇸🇪+Stockholm_60
+      - WeVPN+RS+🇷🇸+Belgrade_61
+      - WeVPN+BG+🇧🇬+Sofia_62
+      - WeVPN+UA+🇺🇦+Kyiv_63
+      - WeVPN+GR+🇬🇷+Athens_64
+      - WeVPN+RO+🇷🇴+Bucharest_65
+      - WeVPN+BR+🇧🇷+Sao+Paulo_66
+      - WeVPN+HU+🇭🇺+Budapest_67
+      - WeVPN+AR+🇦🇷+Buenos+Aires_68
+      - WeVPN+US+🇺🇸+Phoenix_69
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -46,6 +164,65 @@ proxy-groups:
       - WeVPN+CH+🇨🇭+Zurich_8
       - WeVPN+NZ+🇳🇿+Auckland_9
       - WeVPN+VN+🇻🇳+Hanoi_10
+      - WeVPN+HK+🇭🇰+Hong+Kong_11
+      - WeVPN+ID+🇮🇩+Jakarta_12
+      - WeVPN+PH+🇵🇭+Manila_13
+      - WeVPN+AU+🇦🇺+Melbourne_14
+      - WeVPN+AU+🇦🇺+Sydney_15
+      - WeVPN+RU+🇷🇺+Moscow_16
+      - WeVPN+RU+🇷🇺+St+Petersburg_17
+      - WeVPN+KR+🇰🇷+Seoul_18
+      - WeVPN+My+🇲🇾+Sibu_19
+      - WeVPN+SG+🇸🇬+Singapore_20
+      - WeVPN+TW+🇹🇼+Taipei_21
+      - WeVPN+JP+🇯🇵+Tokyo_22
+      - WeVPN+EG+🇪🇬+Cairo_23
+      - WeVPN+IN+🇮🇳+Chennai_24
+      - WeVPN+TR+🇹🇷+Denizli_25
+      - WeVPN+AE+🇦🇪+Dubai_26
+      - WeVPN+ZA+🇿🇦+Johannesburg_27
+      - WeVPN+NG+🇳🇬+Lagos_28
+      - WeVPN+IL+🇮🇱+Tel+Aviv_29
+      - WeVPN+CA+🇨🇦+Toronto_30
+      - WeVPN+CA+🇨🇦+Montreal_31
+      - WeVPN+US+🇺🇸+Chicago_32
+      - WeVPN+US+🇺🇸+Washington+DC_33
+      - WeVPN+US+🇺🇸+New+York_34
+      - WeVPN+US+🇺🇸+New+Jersey_35
+      - WeVPN+US+🇺🇸+New+York-PF_36
+      - WeVPN+US+🇺🇸+Denver_37
+      - WeVPN+US+🇺🇸+Atlanta_38
+      - WeVPN+CZ+🇨🇿+Prague_39
+      - WeVPN+US+🇺🇸+Miami_40
+      - WeVPN+US+🇺🇸+Seattle_41
+      - WeVPN+US+🇺🇸+Salt+Lake+City_42
+      - WeVPN+CA+🇨🇦+Vancouver_43
+      - WeVPN+US+🇺🇸+Dallas_44
+      - WeVPN+US+🇺🇸+San+Jose_45
+      - WeVPN+US+🇺🇸+Los+Angeles_46
+      - WeVPN+US+🇺🇸+Los+Angeles-PF_47
+      - WeVPN+MX+🇲🇽+Mexico+City_48
+      - WeVPN+GB+🇬🇧+London_49
+      - WeVPN+NL+🇳🇱+Amsterdam_50
+      - WeVPN+DE+🇩🇪+Frankfurt_51
+      - WeVPN+BE+🇧🇪+Brussels_52
+      - WeVPN+PT+🇵🇹+Lisbon_53
+      - WeVPN+FI+🇫🇮+Helsinki_54
+      - WeVPN+IE+🇮🇪+Dublin_55
+      - WeVPN+PL+🇵🇱+Warsaw_56
+      - WeVPN+DK+🇩🇰+Copenhagen_57
+      - WeVPN+AT+🇦🇹+Vienna_58
+      - WeVPN+FI+🇫🇮+Oulu_59
+      - WeVPN+SE+🇸🇪+Stockholm_60
+      - WeVPN+RS+🇷🇸+Belgrade_61
+      - WeVPN+BG+🇧🇬+Sofia_62
+      - WeVPN+UA+🇺🇦+Kyiv_63
+      - WeVPN+GR+🇬🇷+Athens_64
+      - WeVPN+RO+🇷🇴+Bucharest_65
+      - WeVPN+BR+🇧🇷+Sao+Paulo_66
+      - WeVPN+HU+🇭🇺+Budapest_67
+      - WeVPN+AR+🇦🇷+Buenos+Aires_68
+      - WeVPN+US+🇺🇸+Phoenix_69
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -62,6 +239,65 @@ proxy-groups:
       - WeVPN+CH+🇨🇭+Zurich_8
       - WeVPN+NZ+🇳🇿+Auckland_9
       - WeVPN+VN+🇻🇳+Hanoi_10
+      - WeVPN+HK+🇭🇰+Hong+Kong_11
+      - WeVPN+ID+🇮🇩+Jakarta_12
+      - WeVPN+PH+🇵🇭+Manila_13
+      - WeVPN+AU+🇦🇺+Melbourne_14
+      - WeVPN+AU+🇦🇺+Sydney_15
+      - WeVPN+RU+🇷🇺+Moscow_16
+      - WeVPN+RU+🇷🇺+St+Petersburg_17
+      - WeVPN+KR+🇰🇷+Seoul_18
+      - WeVPN+My+🇲🇾+Sibu_19
+      - WeVPN+SG+🇸🇬+Singapore_20
+      - WeVPN+TW+🇹🇼+Taipei_21
+      - WeVPN+JP+🇯🇵+Tokyo_22
+      - WeVPN+EG+🇪🇬+Cairo_23
+      - WeVPN+IN+🇮🇳+Chennai_24
+      - WeVPN+TR+🇹🇷+Denizli_25
+      - WeVPN+AE+🇦🇪+Dubai_26
+      - WeVPN+ZA+🇿🇦+Johannesburg_27
+      - WeVPN+NG+🇳🇬+Lagos_28
+      - WeVPN+IL+🇮🇱+Tel+Aviv_29
+      - WeVPN+CA+🇨🇦+Toronto_30
+      - WeVPN+CA+🇨🇦+Montreal_31
+      - WeVPN+US+🇺🇸+Chicago_32
+      - WeVPN+US+🇺🇸+Washington+DC_33
+      - WeVPN+US+🇺🇸+New+York_34
+      - WeVPN+US+🇺🇸+New+Jersey_35
+      - WeVPN+US+🇺🇸+New+York-PF_36
+      - WeVPN+US+🇺🇸+Denver_37
+      - WeVPN+US+🇺🇸+Atlanta_38
+      - WeVPN+CZ+🇨🇿+Prague_39
+      - WeVPN+US+🇺🇸+Miami_40
+      - WeVPN+US+🇺🇸+Seattle_41
+      - WeVPN+US+🇺🇸+Salt+Lake+City_42
+      - WeVPN+CA+🇨🇦+Vancouver_43
+      - WeVPN+US+🇺🇸+Dallas_44
+      - WeVPN+US+🇺🇸+San+Jose_45
+      - WeVPN+US+🇺🇸+Los+Angeles_46
+      - WeVPN+US+🇺🇸+Los+Angeles-PF_47
+      - WeVPN+MX+🇲🇽+Mexico+City_48
+      - WeVPN+GB+🇬🇧+London_49
+      - WeVPN+NL+🇳🇱+Amsterdam_50
+      - WeVPN+DE+🇩🇪+Frankfurt_51
+      - WeVPN+BE+🇧🇪+Brussels_52
+      - WeVPN+PT+🇵🇹+Lisbon_53
+      - WeVPN+FI+🇫🇮+Helsinki_54
+      - WeVPN+IE+🇮🇪+Dublin_55
+      - WeVPN+PL+🇵🇱+Warsaw_56
+      - WeVPN+DK+🇩🇰+Copenhagen_57
+      - WeVPN+AT+🇦🇹+Vienna_58
+      - WeVPN+FI+🇫🇮+Oulu_59
+      - WeVPN+SE+🇸🇪+Stockholm_60
+      - WeVPN+RS+🇷🇸+Belgrade_61
+      - WeVPN+BG+🇧🇬+Sofia_62
+      - WeVPN+UA+🇺🇦+Kyiv_63
+      - WeVPN+GR+🇬🇷+Athens_64
+      - WeVPN+RO+🇷🇴+Bucharest_65
+      - WeVPN+BR+🇧🇷+Sao+Paulo_66
+      - WeVPN+HU+🇭🇺+Budapest_67
+      - WeVPN+AR+🇦🇷+Buenos+Aires_68
+      - WeVPN+US+🇺🇸+Phoenix_69
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -77,6 +313,65 @@ proxy-groups:
       - WeVPN+CH+🇨🇭+Zurich_8
       - WeVPN+NZ+🇳🇿+Auckland_9
       - WeVPN+VN+🇻🇳+Hanoi_10
+      - WeVPN+HK+🇭🇰+Hong+Kong_11
+      - WeVPN+ID+🇮🇩+Jakarta_12
+      - WeVPN+PH+🇵🇭+Manila_13
+      - WeVPN+AU+🇦🇺+Melbourne_14
+      - WeVPN+AU+🇦🇺+Sydney_15
+      - WeVPN+RU+🇷🇺+Moscow_16
+      - WeVPN+RU+🇷🇺+St+Petersburg_17
+      - WeVPN+KR+🇰🇷+Seoul_18
+      - WeVPN+My+🇲🇾+Sibu_19
+      - WeVPN+SG+🇸🇬+Singapore_20
+      - WeVPN+TW+🇹🇼+Taipei_21
+      - WeVPN+JP+🇯🇵+Tokyo_22
+      - WeVPN+EG+🇪🇬+Cairo_23
+      - WeVPN+IN+🇮🇳+Chennai_24
+      - WeVPN+TR+🇹🇷+Denizli_25
+      - WeVPN+AE+🇦🇪+Dubai_26
+      - WeVPN+ZA+🇿🇦+Johannesburg_27
+      - WeVPN+NG+🇳🇬+Lagos_28
+      - WeVPN+IL+🇮🇱+Tel+Aviv_29
+      - WeVPN+CA+🇨🇦+Toronto_30
+      - WeVPN+CA+🇨🇦+Montreal_31
+      - WeVPN+US+🇺🇸+Chicago_32
+      - WeVPN+US+🇺🇸+Washington+DC_33
+      - WeVPN+US+🇺🇸+New+York_34
+      - WeVPN+US+🇺🇸+New+Jersey_35
+      - WeVPN+US+🇺🇸+New+York-PF_36
+      - WeVPN+US+🇺🇸+Denver_37
+      - WeVPN+US+🇺🇸+Atlanta_38
+      - WeVPN+CZ+🇨🇿+Prague_39
+      - WeVPN+US+🇺🇸+Miami_40
+      - WeVPN+US+🇺🇸+Seattle_41
+      - WeVPN+US+🇺🇸+Salt+Lake+City_42
+      - WeVPN+CA+🇨🇦+Vancouver_43
+      - WeVPN+US+🇺🇸+Dallas_44
+      - WeVPN+US+🇺🇸+San+Jose_45
+      - WeVPN+US+🇺🇸+Los+Angeles_46
+      - WeVPN+US+🇺🇸+Los+Angeles-PF_47
+      - WeVPN+MX+🇲🇽+Mexico+City_48
+      - WeVPN+GB+🇬🇧+London_49
+      - WeVPN+NL+🇳🇱+Amsterdam_50
+      - WeVPN+DE+🇩🇪+Frankfurt_51
+      - WeVPN+BE+🇧🇪+Brussels_52
+      - WeVPN+PT+🇵🇹+Lisbon_53
+      - WeVPN+FI+🇫🇮+Helsinki_54
+      - WeVPN+IE+🇮🇪+Dublin_55
+      - WeVPN+PL+🇵🇱+Warsaw_56
+      - WeVPN+DK+🇩🇰+Copenhagen_57
+      - WeVPN+AT+🇦🇹+Vienna_58
+      - WeVPN+FI+🇫🇮+Oulu_59
+      - WeVPN+SE+🇸🇪+Stockholm_60
+      - WeVPN+RS+🇷🇸+Belgrade_61
+      - WeVPN+BG+🇧🇬+Sofia_62
+      - WeVPN+UA+🇺🇦+Kyiv_63
+      - WeVPN+GR+🇬🇷+Athens_64
+      - WeVPN+RO+🇷🇴+Bucharest_65
+      - WeVPN+BR+🇧🇷+Sao+Paulo_66
+      - WeVPN+HU+🇭🇺+Budapest_67
+      - WeVPN+AR+🇦🇷+Buenos+Aires_68
+      - WeVPN+US+🇺🇸+Phoenix_69
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
@@ -92,6 +387,65 @@ proxy-groups:
       - WeVPN+CH+🇨🇭+Zurich_8
       - WeVPN+NZ+🇳🇿+Auckland_9
       - WeVPN+VN+🇻🇳+Hanoi_10
+      - WeVPN+HK+🇭🇰+Hong+Kong_11
+      - WeVPN+ID+🇮🇩+Jakarta_12
+      - WeVPN+PH+🇵🇭+Manila_13
+      - WeVPN+AU+🇦🇺+Melbourne_14
+      - WeVPN+AU+🇦🇺+Sydney_15
+      - WeVPN+RU+🇷🇺+Moscow_16
+      - WeVPN+RU+🇷🇺+St+Petersburg_17
+      - WeVPN+KR+🇰🇷+Seoul_18
+      - WeVPN+My+🇲🇾+Sibu_19
+      - WeVPN+SG+🇸🇬+Singapore_20
+      - WeVPN+TW+🇹🇼+Taipei_21
+      - WeVPN+JP+🇯🇵+Tokyo_22
+      - WeVPN+EG+🇪🇬+Cairo_23
+      - WeVPN+IN+🇮🇳+Chennai_24
+      - WeVPN+TR+🇹🇷+Denizli_25
+      - WeVPN+AE+🇦🇪+Dubai_26
+      - WeVPN+ZA+🇿🇦+Johannesburg_27
+      - WeVPN+NG+🇳🇬+Lagos_28
+      - WeVPN+IL+🇮🇱+Tel+Aviv_29
+      - WeVPN+CA+🇨🇦+Toronto_30
+      - WeVPN+CA+🇨🇦+Montreal_31
+      - WeVPN+US+🇺🇸+Chicago_32
+      - WeVPN+US+🇺🇸+Washington+DC_33
+      - WeVPN+US+🇺🇸+New+York_34
+      - WeVPN+US+🇺🇸+New+Jersey_35
+      - WeVPN+US+🇺🇸+New+York-PF_36
+      - WeVPN+US+🇺🇸+Denver_37
+      - WeVPN+US+🇺🇸+Atlanta_38
+      - WeVPN+CZ+🇨🇿+Prague_39
+      - WeVPN+US+🇺🇸+Miami_40
+      - WeVPN+US+🇺🇸+Seattle_41
+      - WeVPN+US+🇺🇸+Salt+Lake+City_42
+      - WeVPN+CA+🇨🇦+Vancouver_43
+      - WeVPN+US+🇺🇸+Dallas_44
+      - WeVPN+US+🇺🇸+San+Jose_45
+      - WeVPN+US+🇺🇸+Los+Angeles_46
+      - WeVPN+US+🇺🇸+Los+Angeles-PF_47
+      - WeVPN+MX+🇲🇽+Mexico+City_48
+      - WeVPN+GB+🇬🇧+London_49
+      - WeVPN+NL+🇳🇱+Amsterdam_50
+      - WeVPN+DE+🇩🇪+Frankfurt_51
+      - WeVPN+BE+🇧🇪+Brussels_52
+      - WeVPN+PT+🇵🇹+Lisbon_53
+      - WeVPN+FI+🇫🇮+Helsinki_54
+      - WeVPN+IE+🇮🇪+Dublin_55
+      - WeVPN+PL+🇵🇱+Warsaw_56
+      - WeVPN+DK+🇩🇰+Copenhagen_57
+      - WeVPN+AT+🇦🇹+Vienna_58
+      - WeVPN+FI+🇫🇮+Oulu_59
+      - WeVPN+SE+🇸🇪+Stockholm_60
+      - WeVPN+RS+🇷🇸+Belgrade_61
+      - WeVPN+BG+🇧🇬+Sofia_62
+      - WeVPN+UA+🇺🇦+Kyiv_63
+      - WeVPN+GR+🇬🇷+Athens_64
+      - WeVPN+RO+🇷🇴+Bucharest_65
+      - WeVPN+BR+🇧🇷+Sao+Paulo_66
+      - WeVPN+HU+🇭🇺+Budapest_67
+      - WeVPN+AR+🇦🇷+Buenos+Aires_68
+      - WeVPN+US+🇺🇸+Phoenix_69
   - name: 📲 电报信息
     type: select
     proxies:
@@ -107,6 +461,65 @@ proxy-groups:
       - WeVPN+CH+🇨🇭+Zurich_8
       - WeVPN+NZ+🇳🇿+Auckland_9
       - WeVPN+VN+🇻🇳+Hanoi_10
+      - WeVPN+HK+🇭🇰+Hong+Kong_11
+      - WeVPN+ID+🇮🇩+Jakarta_12
+      - WeVPN+PH+🇵🇭+Manila_13
+      - WeVPN+AU+🇦🇺+Melbourne_14
+      - WeVPN+AU+🇦🇺+Sydney_15
+      - WeVPN+RU+🇷🇺+Moscow_16
+      - WeVPN+RU+🇷🇺+St+Petersburg_17
+      - WeVPN+KR+🇰🇷+Seoul_18
+      - WeVPN+My+🇲🇾+Sibu_19
+      - WeVPN+SG+🇸🇬+Singapore_20
+      - WeVPN+TW+🇹🇼+Taipei_21
+      - WeVPN+JP+🇯🇵+Tokyo_22
+      - WeVPN+EG+🇪🇬+Cairo_23
+      - WeVPN+IN+🇮🇳+Chennai_24
+      - WeVPN+TR+🇹🇷+Denizli_25
+      - WeVPN+AE+🇦🇪+Dubai_26
+      - WeVPN+ZA+🇿🇦+Johannesburg_27
+      - WeVPN+NG+🇳🇬+Lagos_28
+      - WeVPN+IL+🇮🇱+Tel+Aviv_29
+      - WeVPN+CA+🇨🇦+Toronto_30
+      - WeVPN+CA+🇨🇦+Montreal_31
+      - WeVPN+US+🇺🇸+Chicago_32
+      - WeVPN+US+🇺🇸+Washington+DC_33
+      - WeVPN+US+🇺🇸+New+York_34
+      - WeVPN+US+🇺🇸+New+Jersey_35
+      - WeVPN+US+🇺🇸+New+York-PF_36
+      - WeVPN+US+🇺🇸+Denver_37
+      - WeVPN+US+🇺🇸+Atlanta_38
+      - WeVPN+CZ+🇨🇿+Prague_39
+      - WeVPN+US+🇺🇸+Miami_40
+      - WeVPN+US+🇺🇸+Seattle_41
+      - WeVPN+US+🇺🇸+Salt+Lake+City_42
+      - WeVPN+CA+🇨🇦+Vancouver_43
+      - WeVPN+US+🇺🇸+Dallas_44
+      - WeVPN+US+🇺🇸+San+Jose_45
+      - WeVPN+US+🇺🇸+Los+Angeles_46
+      - WeVPN+US+🇺🇸+Los+Angeles-PF_47
+      - WeVPN+MX+🇲🇽+Mexico+City_48
+      - WeVPN+GB+🇬🇧+London_49
+      - WeVPN+NL+🇳🇱+Amsterdam_50
+      - WeVPN+DE+🇩🇪+Frankfurt_51
+      - WeVPN+BE+🇧🇪+Brussels_52
+      - WeVPN+PT+🇵🇹+Lisbon_53
+      - WeVPN+FI+🇫🇮+Helsinki_54
+      - WeVPN+IE+🇮🇪+Dublin_55
+      - WeVPN+PL+🇵🇱+Warsaw_56
+      - WeVPN+DK+🇩🇰+Copenhagen_57
+      - WeVPN+AT+🇦🇹+Vienna_58
+      - WeVPN+FI+🇫🇮+Oulu_59
+      - WeVPN+SE+🇸🇪+Stockholm_60
+      - WeVPN+RS+🇷🇸+Belgrade_61
+      - WeVPN+BG+🇧🇬+Sofia_62
+      - WeVPN+UA+🇺🇦+Kyiv_63
+      - WeVPN+GR+🇬🇷+Athens_64
+      - WeVPN+RO+🇷🇴+Bucharest_65
+      - WeVPN+BR+🇧🇷+Sao+Paulo_66
+      - WeVPN+HU+🇭🇺+Budapest_67
+      - WeVPN+AR+🇦🇷+Buenos+Aires_68
+      - WeVPN+US+🇺🇸+Phoenix_69
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -123,6 +536,65 @@ proxy-groups:
       - WeVPN+CH+🇨🇭+Zurich_8
       - WeVPN+NZ+🇳🇿+Auckland_9
       - WeVPN+VN+🇻🇳+Hanoi_10
+      - WeVPN+HK+🇭🇰+Hong+Kong_11
+      - WeVPN+ID+🇮🇩+Jakarta_12
+      - WeVPN+PH+🇵🇭+Manila_13
+      - WeVPN+AU+🇦🇺+Melbourne_14
+      - WeVPN+AU+🇦🇺+Sydney_15
+      - WeVPN+RU+🇷🇺+Moscow_16
+      - WeVPN+RU+🇷🇺+St+Petersburg_17
+      - WeVPN+KR+🇰🇷+Seoul_18
+      - WeVPN+My+🇲🇾+Sibu_19
+      - WeVPN+SG+🇸🇬+Singapore_20
+      - WeVPN+TW+🇹🇼+Taipei_21
+      - WeVPN+JP+🇯🇵+Tokyo_22
+      - WeVPN+EG+🇪🇬+Cairo_23
+      - WeVPN+IN+🇮🇳+Chennai_24
+      - WeVPN+TR+🇹🇷+Denizli_25
+      - WeVPN+AE+🇦🇪+Dubai_26
+      - WeVPN+ZA+🇿🇦+Johannesburg_27
+      - WeVPN+NG+🇳🇬+Lagos_28
+      - WeVPN+IL+🇮🇱+Tel+Aviv_29
+      - WeVPN+CA+🇨🇦+Toronto_30
+      - WeVPN+CA+🇨🇦+Montreal_31
+      - WeVPN+US+🇺🇸+Chicago_32
+      - WeVPN+US+🇺🇸+Washington+DC_33
+      - WeVPN+US+🇺🇸+New+York_34
+      - WeVPN+US+🇺🇸+New+Jersey_35
+      - WeVPN+US+🇺🇸+New+York-PF_36
+      - WeVPN+US+🇺🇸+Denver_37
+      - WeVPN+US+🇺🇸+Atlanta_38
+      - WeVPN+CZ+🇨🇿+Prague_39
+      - WeVPN+US+🇺🇸+Miami_40
+      - WeVPN+US+🇺🇸+Seattle_41
+      - WeVPN+US+🇺🇸+Salt+Lake+City_42
+      - WeVPN+CA+🇨🇦+Vancouver_43
+      - WeVPN+US+🇺🇸+Dallas_44
+      - WeVPN+US+🇺🇸+San+Jose_45
+      - WeVPN+US+🇺🇸+Los+Angeles_46
+      - WeVPN+US+🇺🇸+Los+Angeles-PF_47
+      - WeVPN+MX+🇲🇽+Mexico+City_48
+      - WeVPN+GB+🇬🇧+London_49
+      - WeVPN+NL+🇳🇱+Amsterdam_50
+      - WeVPN+DE+🇩🇪+Frankfurt_51
+      - WeVPN+BE+🇧🇪+Brussels_52
+      - WeVPN+PT+🇵🇹+Lisbon_53
+      - WeVPN+FI+🇫🇮+Helsinki_54
+      - WeVPN+IE+🇮🇪+Dublin_55
+      - WeVPN+PL+🇵🇱+Warsaw_56
+      - WeVPN+DK+🇩🇰+Copenhagen_57
+      - WeVPN+AT+🇦🇹+Vienna_58
+      - WeVPN+FI+🇫🇮+Oulu_59
+      - WeVPN+SE+🇸🇪+Stockholm_60
+      - WeVPN+RS+🇷🇸+Belgrade_61
+      - WeVPN+BG+🇧🇬+Sofia_62
+      - WeVPN+UA+🇺🇦+Kyiv_63
+      - WeVPN+GR+🇬🇷+Athens_64
+      - WeVPN+RO+🇷🇴+Bucharest_65
+      - WeVPN+BR+🇧🇷+Sao+Paulo_66
+      - WeVPN+HU+🇭🇺+Budapest_67
+      - WeVPN+AR+🇦🇷+Buenos+Aires_68
+      - WeVPN+US+🇺🇸+Phoenix_69
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -148,6 +620,65 @@ proxy-groups:
       - WeVPN+CH+🇨🇭+Zurich_8
       - WeVPN+NZ+🇳🇿+Auckland_9
       - WeVPN+VN+🇻🇳+Hanoi_10
+      - WeVPN+HK+🇭🇰+Hong+Kong_11
+      - WeVPN+ID+🇮🇩+Jakarta_12
+      - WeVPN+PH+🇵🇭+Manila_13
+      - WeVPN+AU+🇦🇺+Melbourne_14
+      - WeVPN+AU+🇦🇺+Sydney_15
+      - WeVPN+RU+🇷🇺+Moscow_16
+      - WeVPN+RU+🇷🇺+St+Petersburg_17
+      - WeVPN+KR+🇰🇷+Seoul_18
+      - WeVPN+My+🇲🇾+Sibu_19
+      - WeVPN+SG+🇸🇬+Singapore_20
+      - WeVPN+TW+🇹🇼+Taipei_21
+      - WeVPN+JP+🇯🇵+Tokyo_22
+      - WeVPN+EG+🇪🇬+Cairo_23
+      - WeVPN+IN+🇮🇳+Chennai_24
+      - WeVPN+TR+🇹🇷+Denizli_25
+      - WeVPN+AE+🇦🇪+Dubai_26
+      - WeVPN+ZA+🇿🇦+Johannesburg_27
+      - WeVPN+NG+🇳🇬+Lagos_28
+      - WeVPN+IL+🇮🇱+Tel+Aviv_29
+      - WeVPN+CA+🇨🇦+Toronto_30
+      - WeVPN+CA+🇨🇦+Montreal_31
+      - WeVPN+US+🇺🇸+Chicago_32
+      - WeVPN+US+🇺🇸+Washington+DC_33
+      - WeVPN+US+🇺🇸+New+York_34
+      - WeVPN+US+🇺🇸+New+Jersey_35
+      - WeVPN+US+🇺🇸+New+York-PF_36
+      - WeVPN+US+🇺🇸+Denver_37
+      - WeVPN+US+🇺🇸+Atlanta_38
+      - WeVPN+CZ+🇨🇿+Prague_39
+      - WeVPN+US+🇺🇸+Miami_40
+      - WeVPN+US+🇺🇸+Seattle_41
+      - WeVPN+US+🇺🇸+Salt+Lake+City_42
+      - WeVPN+CA+🇨🇦+Vancouver_43
+      - WeVPN+US+🇺🇸+Dallas_44
+      - WeVPN+US+🇺🇸+San+Jose_45
+      - WeVPN+US+🇺🇸+Los+Angeles_46
+      - WeVPN+US+🇺🇸+Los+Angeles-PF_47
+      - WeVPN+MX+🇲🇽+Mexico+City_48
+      - WeVPN+GB+🇬🇧+London_49
+      - WeVPN+NL+🇳🇱+Amsterdam_50
+      - WeVPN+DE+🇩🇪+Frankfurt_51
+      - WeVPN+BE+🇧🇪+Brussels_52
+      - WeVPN+PT+🇵🇹+Lisbon_53
+      - WeVPN+FI+🇫🇮+Helsinki_54
+      - WeVPN+IE+🇮🇪+Dublin_55
+      - WeVPN+PL+🇵🇱+Warsaw_56
+      - WeVPN+DK+🇩🇰+Copenhagen_57
+      - WeVPN+AT+🇦🇹+Vienna_58
+      - WeVPN+FI+🇫🇮+Oulu_59
+      - WeVPN+SE+🇸🇪+Stockholm_60
+      - WeVPN+RS+🇷🇸+Belgrade_61
+      - WeVPN+BG+🇧🇬+Sofia_62
+      - WeVPN+UA+🇺🇦+Kyiv_63
+      - WeVPN+GR+🇬🇷+Athens_64
+      - WeVPN+RO+🇷🇴+Bucharest_65
+      - WeVPN+BR+🇧🇷+Sao+Paulo_66
+      - WeVPN+HU+🇭🇺+Budapest_67
+      - WeVPN+AR+🇦🇷+Buenos+Aires_68
+      - WeVPN+US+🇺🇸+Phoenix_69
 rules:
   - DOMAIN-SUFFIX,local,🎯 全球直连
   - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
