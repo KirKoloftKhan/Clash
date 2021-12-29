@@ -1,9 +1,27 @@
-port: 7890
-socks-port: 7891
-allow-lan: true
-mode: Rule
-log-level: info
-external-controller: 0.0.0.0:9090
+
+mixed-port: 7890
+allow-lan: false
+mode: Global
+log-level: silent
+external-controller: 127.0.0.1:9090
+dns:
+  enable: true
+  enhanced-mode: redir-host
+  fake-ip-range: 198.18.0.1/16
+  nameserver:
+    - 94.140.14.14
+    - 94.140.15.15
+tun:
+  enable: true
+  stack: gvisor
+  dns-hijack:
+    - 198.18.0.2:53
+  auto-route: true
+  auto-detect-interface: true
+
+  fallback:
+    - 94.140.14.14
+    - 94.140.14.15
 proxies:
   - {name: 'GB+🇬🇧+London-PF_1', server: 77.243.177.78, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: Qu9b6jbYLF5Dtha3n7W2}
   - {name: 'GB+🇬🇧+Manchester_2', server: 86.106.136.98, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: h6WG7sxsLTBGn7uyvMG8}
